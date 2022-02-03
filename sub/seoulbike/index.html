@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>서울자전거 따릉이 - 무인대여시스템</title>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 640px)">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+        <div class="top-head">
+            <div class="inner">
+                <div class="top-cont">
+                    <div class="search">
+                        <input type="text" placeholder="검색어 입력" required><button type="button"></button>
+                    </div>
+                    <div class="lang-area">
+                        <a href="#" class="lang"><figure></figure>Language<i class="fas fa-globe"></i></a>
+                        <ul class="lang-list">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">中國語</a></li>
+                            <li><a href="#">日本語</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-head">
+            <div class="inner">
+                <h1><a href="#" class="blind">서울자전거 따릉이</a></h1>
+                <nav class="gnb-area">
+                   <ul class="gnb">
+                       <li><a href="#">이용안내</a></li>
+                       <li><a href="sub1.html">이용권 안내</a></li>
+                       <li><a href="#">공지사항</a></li>
+                       <li><a href="#">마이페이지</a></li>
+                   </ul>
+                   <a href="#" class="mb-btn-close hide"><i class="xi-close"></i></a>
+                   <div class="sub-area">
+                       <ul class="sub-menu">
+                           <li>
+                               <ul>
+                                   <li><a href="#">대여 방법</a></li>
+                                   <li><a href="#">반납 방법</a></li>
+                                   <li><a href="#">대여소 현황</a></li>
+                                   <li><a href="#">안내 수칙</a></li>
+                                   <li><a href="#">서울시 자전거<br> 도로 및 코스</a></li>
+                               </ul>
+                           </li>
+                           <li>
+                               <ul>
+                                   <li><a href="#">이용권 구매</a></li>
+                                   <li><a href="#">선물하기</a></li>
+                               </ul>
+                           </li>
+                           <li>
+                               <ul>
+                                   <li><a href="#">고객의 소리</a></li>
+                                   <li><a href="#">공지사항</a></li>
+                               </ul>
+                           </li>
+                           <li>
+                               <ul>
+                                   <li><a href="#">내 이용권</a></li>
+                                   <li><a href="#">이용내역</a></li>
+                                   <li><a href="#">결제 수단 등록/변경</a></li>
+                                   <li><a href="#">결제/환불</a></li>
+                                   <li><a href="#">쿠폰/마일리지 관리</a></li>
+                               </ul>
+                           </li>
+                       </ul>
+                   </div>
+                </nav>
+                <div class="mobile-head hide">
+                    <a href="#" class="mb-btn-menu"><i class="xi-bars"></i></a>
+                    <div class="mb-box">
+                        <a href="#" class="mb-search"><i class="xi-search"></i><span>검색</span></a>
+                        <a href="#" class="mb-users"><i class="xi-user-o"></i><span>내정보</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main-visual">
+        <div class="main-bg"></div>
+        <div class="main-cont">
+            <p class="main-text top">서울시 자전거 대여서비스</p>
+            <p class="main-text bot">지금 바로 <span>따릉이 APP</span>에서 사용해보세요.</p>
+            <div class="login-area">
+                <p class="blind">로그인 후 자전거를 대여하실 수 있습니다.</p>    
+                <form>
+                    <fieldset>                                
+                        <legend class="blind">따릉이 로그인</legend>
+                        <label for="user-id" class="login-id">
+                            <input id="user-id" type="text" placeholder="아이디" required>
+                        </label>
+                        <label for="user-pw" class="login-pw">
+                            <input id="user-pw" type="password" placeholder="비밀번호" required>
+                        </label>
+                        <div class="login-mid">
+                            <div class="login-auto"><input type="checkbox"> 자동로그인</div>
+                            <a href="#">아이디 / 비밀번호 찾기</a>
+                        </div>
+                        <button type="button" class="login-btn">로그인</button>
+                        <div class="login-bot">
+                            <a href="#">비회원 로그인</a>
+                            <a href="#">회원가입</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="main-btn">
+                <a href="#" class="btn btn1">앱 설치하기</a>
+                <a href="#" class="btn btn2"> 안전수칙 확인하기</a>
+            </div>
+        </div>
+        <div class="mobile-cont hide">
+           <ul class="bikeclass">
+               <li><a href="#">모든 자전거</a></li>
+               <li><a href="#">QR형</a></li>
+               <li><a href="#">Screen</a></li>
+               <li><a href="#">Screen형</a></li>
+               <li><a href="#">새싹</a></li>
+           </ul>
+           <p class="ticket">이용권이 7일 남았습니다. (2021-12-31)</p>
+           <div class="map-bot">
+               <div class="map-btn">
+                   <a href="#"><i class="xi-maker-drop"></i></a>
+                   <a href="#"><i class="xi-redo"></i></a>
+               </div>
+               <div class="mobile-rental">
+                    <div class="mobile-rental-inner">
+                        <div class="mobile-main-text">
+                           <h3>가장 가까운 대여소/자전거 도로</h3>
+                           <a href="#" class="btn-down"></a>
+                        </div>
+                        <ul class="rental-text">
+                           <li><h4>철산 3동 다리 앞</h4>
+                               <div class="rental-info">
+                                   <p>5분</p>
+                                   <a href="#">바로가기</a>                           
+                               </div>
+                           </li>
+                           <li><h4>자전거 도로</h4>
+                               <div class="rental-info">
+                                   <p>500m</p>
+                                   <a href="#">바로가기</a>                           
+                               </div>
+                           </li>
+                       </ul>
+                    </div>   
+                    <div class="mb-main-btn">
+                        <a href="#" class="main-btn btn">즐겨찾기</a>
+                        <a href="#" class="main-btn btn">대여하기</a>
+                    </div>
+               </div> 
+            </div>   
+        </div>
+    </div>
+    <main>
+        <div id="chat">
+            <a href="#"><span class="blind">무엇이든 물어보세요. 챗봇입니다.</span></a>
+        </div>
+        <section id="info">
+            <div class="inner">
+                <h2 class="sec1"><span>자전거와 함께하는 건강한 도시</span> 세계적인 자전거 도시,<strong> 서울</strong> 을 만들겠습니다.</h2>
+                <ul class="inner">
+                    <li>
+                        <img src="img/ico_info_health.png" alt="health">
+                        <h3>건강한 자전거 도시</h3>
+                        <p>자전거 이용의 생활화를 통한 시민<br>건강 증진 실현</p>
+                    </li>
+                    <li>
+                        <img src="img/ico_info_clean.png" alt="clean">
+                        <h3>깨끗한 자전거 도시</h3>
+                        <p>자전거 교통수단 분담률을<br> 향상시켜 CO2 발생 감소실현</p>
+                    </li>
+                    <li>
+                        <img src="img/ico_info_air.png" alt="air">
+                        <h3>녹색 성장 선도 도시</h3>
+                        <p>국가 비전인 "저탄소 녹색성장" 실현</p>
+                    </li>
+                    <li>
+                        <img src="img/ico_info_con.png" alt="convenience">
+                        <h3>편리한 자전거 도시</h3>
+                        <p>곳곳에 배치된 자전거로<br> 이동 편리성 증진 실현</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="guide">
+            <div class="inner clear">
+                <div class="contents">
+                    <h2>대한민국 국민이라면 누구나 서울시에서 따릉이를 이용하실 수 있습니다.</h2>
+                    <ul>                         
+                        <li><a href="javascript:;">APP 다운로드 및 회원가입</a></li>
+                        <li><a href="javascript:;">대여소 확인하기</a></li>
+                        <li><a href="javascript:;">자전거 선택 후 QR 인식,대여 후 타기</a></li>
+                        <li><a href="javascript:;">자전거 대여소에 반납하기</a></li>                           
+                    </ul>
+                </div>
+                <div class="video-cont">
+                    <video controls poster="img/img_video2.png">
+                        <source src="img/guide.mp4" type="video/mp4">
+                    </video>
+                    <a href="javascript:;" class="blind">플레이 버튼</a>
+                </div>
+            </div>
+        </section>    
+        <section id="place">
+            <div class="inner clear">
+                <h2>대여소 안내</h2>
+                <div class="place-img">
+                    <figure></figure>
+                    <a href="javascript:;" class="desc point1"><img src="img/ico_placepointer.png" alt="자전거 거치대 자세히보기"></a>
+                    <a href="javascript:;" class="desc point2"><img src="img/ico_placepointer.png" alt="자전거 자세히보기"></a>
+                    <div class="picdesc text1 hide">
+                        <figure></figure>
+                        <div class="text">
+                            <h4>자전거 거치대</h4>
+                            <p>거치대는 자전거를 안전하게 세워 보관하는 시설이며, 따릉이 고유 색상과 형태를 지녀 복잡한 서울 시내에서 쉽게 눈에 띄도록 제작되었습니다.</p>
+                        </div>
+                        <a href="javascript:;" class="close text1"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div class="picdesc text2 hide">
+                        <figure></figure>
+                        <div class="text">
+                            <h4>자전거</h4>
+                            <p>누구나 이용할 수 있는 자전거로, 내구성이 강한 소재와 고급기어를 사용하여 주행 안정성과 편의성을 최우선으로 제작하였습니다.</p>
+                        </div>
+                        <a href="javascript:;" class="close text2"><i class="fas fa-times"></i></a>
+                    </div>
+                    <p class="place-info">해당 아이콘을 클릭해서 자세히 알아보세요.</p>
+                </div>
+                <div class="contents">
+                    <p>서울자전거 따릉이를 대여하고 반납할 수 있는 무인 정류장 형태의 자전거 거치 시설 입니다.대여소는 지하철 출입구, 버스정류장, 주택단지, 관공서, 학교, 은행 등 접근이 편리한 주변 생활시설 및 통행장소를 중심으로 운영하고 있습니다. 대여소가 설치된 곳이면 어디에서나 ‘따릉이 APP’을 통해 서울 자전거를 대여하고 반납할 수 있습니다.</p>
+                    <a href="javascript:;" class="btn">대여소 확인하기</a>
+                </div>
+            </div>
+        </section>
+        <section id="with">
+            <h2>오늘 시민들이 따릉이와 함께</h2>
+            <ul>
+                <li> 
+                    <h4>따릉이 누적 가입자 수</h4>
+                    <p class="statistics"><span class="number"></span> 명</p>
+                </li>
+                <li>
+                    <h4>따릉이 누적 사용 시간</h4>
+                    <p class="statistics"><span class="number"></span> 시간</p>
+                </li>
+                <li>
+                    <h4>절감된 탄소 누적 량</h4>
+                    <p class="statistics"><span class="number"></span> kg</p>
+                </li>
+                <li>
+                    <h4>소비 칼로리 누적량</h4>
+                    <p class="statistics"><span class="number"></span> Kcal</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="inner">
+            <ul>
+                <li><a href="javascript:;">이용약관</a></li>
+                <li><a href="javascript:;">개인정보 처리방침</a></li>
+                <li><a href="javascript:;">보험안내</a></li>
+                <li><a href="javascript:;">도움주신 분</a></li>
+            </ul>
+            <address><span>서울 특별시 중구 세종대로 110 서울특별시 대표자 오세훈</span><span>Tel : 1234-5678 (사업자등록번호: 111-22-33333) 우편번호: 98765</span></address>
+            <div class="sns">
+                <a href="javascript:;"><img src="img/facebook.png" alt="페이스북"></a>
+                <a href="javascript:;"><img src="img/instagram.png" alt="인스타그램"></a>
+                <a href="javascript:;"><img src="img/blog.png" alt="네이버블로그"></a>
+            </div>
+            <p class="copy">COPYRIGHT @ 2021 bikeseoul ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+   </div>
+</body>
+</html>

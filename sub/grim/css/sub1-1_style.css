@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/*common*/
+html {font-size: 10px}
+body {font: 400 1.8rem 'IBM Plex Sans KR', sans-serif; color: #333;letter-spacing: -0.5px}
+#wrap {position: relative;overflow: hidden}
+#inner {padding: 0 35px}
+button {cursor: pointer}
+.hide {display: none}
+.block {display: block}
+.on {display: block}
+
+/*header*/
+header {position: relative;top: 0;width: 100%;background-color: rgba(255,255,255,.7);z-index: 100}
+header .top-head {position: relative;height: 55px;box-sizing: border-box}
+header .top-head h1 {font: 1.8rem 'Lexend Zetta', sans-serif;text-align: center;line-height: 3.4}
+header .top-head > a {position: absolute;top: 17px;left: 3%}
+header .top-head .bag-btn {left: auto;right: 3%}
+header .top-head > a > img {width: 27px;height: 27px;}
+header nav {position: absolute;top: 0;width: 100%;height: 100vh;padding: 160px 50px;box-sizing: border-box;background-color: #505786;z-index: 1}
+header nav a {display: block;}
+header nav .plus-btn {display: inline-block;margin-left: 5px;width: 14px;height: 14px;background: url(../img/plus.png) no-repeat center/cover;vertical-align: middle}
+header nav .plus-btn.on {background-image: url(../img/minus.png)}
+header nav .tlist > a {height: 55px;font-size: 2.3rem;font-weight: 600;color: #fff}
+header nav .mlist {margin-left: -8px;border-radius: 20px;background-color: #fff;opacity: .95;overflow: hidden}
+header nav .mlist > li > a {padding: 10px 20px;box-sizing: border-box;border-bottom: 1.5px solid #d6d6d6;font-size: 1.6rem;font-weight: 600;color: #505786;}
+header nav .blist > li a {height: 40px;padding: 10px 30px;box-sizing: border-box;border-bottom: 1px solid #d8d8d8;font-size: 1.45rem;color: #444}
+header nav .logo {position: absolute;top: 4%;left: 50px;font: 500 2rem 'Lexend Zetta', sans-serif;color: rgb(255, 109, 2,.7)}
+header nav .close-btn {position: absolute;font-size: 2.8rem;top: 2.5%;right: 5%;color: rgba(255,255,255,.85)}
+
+/*sub-head*/
+header .sub-head {position: relative;padding: 0 20px;height: 45px;background-color: #eaeaea;overflow: hidden}
+header .sub-head.on {height: auto}
+header .sub-head ul {padding: 4px 15px;box-sizing: border-box;overflow: hidden;}
+header .sub-head ul li {float: left;height: 30px;padding: 0 10px;box-sizing: border-box;margin: 5px 8px;border-radius: 30px;background-color: #fff;line-height: 1.5}
+header .sub-head ul li > a {font-size: 1.33rem;}
+header .sub-head ul li.here {background-color: #505786}
+header .sub-head ul li.here > a {color: #fff;font-weight: 500}
+header .sub-head .sub-btn {position: absolute;top: 15px;right: 15px;width: 20px;height: 18px;background: url(../img/arrow-b.png) no-repeat center/cover}
+header .sub-head .sub-btn.on {background-image: url(../img/arrow-t.png)}
+
+/*test-area*/
+#test-area {}
+#test-area .main-text {margin: 30px 0;font-size: 1.7rem;color: #126b84;text-align: center}
+#test-area .work-list {overflow: hidden}
+#test-area .work-list > a {display: block;float: left;width: calc(100%/3 - 12px);height: 110px;margin: 5px 6px;background: no-repeat center/cover;border-radius: 15px;}
+#test-area .work-list > a.on {border: 4px solid #ff6d02;border-radius: 15px;box-sizing: border-box;opacity: .9}
+#test-area .work-list a:nth-child(1) {background-image: url(../img/work1.png)}
+#test-area .work-list a:nth-child(2) {background-image: url(../img/work2.png)}
+#test-area .work-list a:nth-child(3) {background-image: url(../img/work3.png)}
+#test-area .work-list a:nth-child(4) {background-image: url(../img/work4.png)}
+#test-area .work-list a:nth-child(5) {background-image: url(../img/work5.png)}
+#test-area .work-list a:nth-child(6) {background-image: url(../img/work6.png)}
+#test-area .work-text {height: 180px;box-sizing: border-box;border-bottom: 1px solid #eaeaea}
+#test-area .work-text li {display: none;padding: 50px 0;box-sizing: border-box;text-align: center}
+#test-area .work-text li:first-child {position: relative;display: block}
+#test-area .work-text li:first-child p {padding-top: 60px;box-sizing: border-box;font-weight: 600;color: #126b84}
+#test-area .work-text li:first-child img {position: absolute;width: 50px;height: 50px;top: 25px;left: 43%;box-sizing: border-box;animation: motion 0.9s linear 0s infinite alternate;}
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 20px;}
+}
+#test-area .work-text li b {font-size: 2rem;font-weight: 500}
+#test-area .work-text li b > span {margin-right: 5px;font-weight: 600;color: #505786}
+#test-area .work-text li > p {font-size: 1.7rem}
+#test-area .test-info {margin: 50px 0}
+#test-area .test-info .info-text {font-size: 1.65rem;text-align: center;word-break: keep-all}
+#test-area .test-info .info-text-b {margin: 30px 0;color: #505786;font-weight: 500;text-align: center;word-break: keep-all}
+#test-area .test-info .test-btn {margin: 10px auto;width: 200px;height: 50px;text-align: center;background-color: #505786;border-radius: 10px}
+#test-area .test-info .test-btn > a {display: block;width: 100%;height: 100%;font-weight: 500;color: #fff;line-height: 2.7}

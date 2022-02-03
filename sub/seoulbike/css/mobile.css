@@ -1,0 +1,103 @@
+@charset "utf-8";
+/*common*/
+html {font-size: 9px}
+body {width: 100vw;letter-spacing: 0.1px;}
+section {width: 100vw;margin-bottom: 80px}
+.inner {width: 98vw}
+#wrap {overflow: hidden;}
+
+/*header*/
+header {}
+header .top-head {display: none;}
+header .main-head {height: 65px;background-color: #fff}
+header .main-head .mobile-head {display: block}
+header .main-head h1 {width: 75px;height: 42px;left: 50%;top: 23%;transform: translateX(-50%);background: url(../img/loglo_mobile.png) no-repeat}
+header .main-head h1 > a {}
+
+/*nav*/
+header .main-head nav {width: 80%;height: 100vh;margin-left: -5%;left: -100%;top: 0;transform: none;background-color: #fff;z-index: 1}
+header .main-head nav .mb-btn-close {display: block;position: absolute;top: 0;right: 1%;font-size: 2.5rem;color: #666}
+header .main-head nav .gnb {padding: 55% 0 30% 0;box-sizing: border-box}
+header .main-head nav:before {content: '';position: absolute;top: 10%;left: 50%;transform: translateX(-50%);width: 120px;height: 64px;background: url(../img/loglo_mobile-b.png) no-repeat center/cover}
+header .main-head nav .gnb li {position: relative;float: none;width: 100%;text-align: center}
+header .main-head nav .gnb li > a {height: 80px;font-size: 1.85rem;border-bottom: 1px solid #e8e8e8;line-height: 4.8}
+header .main-head nav .sub-area {opacity: 0}
+.main-head nav .mb-btn-close {display: none;font-size: 3rem;padding: 15px}
+.main-head .mobile-head .mb-btn-menu {position: absolute;left: 4%;bottom: 11%;font-size: 3.1rem;}
+.main-head .mobile-head .mb-box {position: absolute;overflow: hidden;text-align: center;right: 2%;bottom: 11%;}
+.main-head .mobile-head .mb-box > a {display: block;float: left;margin-right: 10px;font-size: 2.4rem}
+.main-head .mobile-head .mb-box > a > i {font-size: 2.9rem}
+.main-head .mobile-head .mb-box a > span {display: block;margin-top: -8px;font-size: 1.25rem}
+
+/*main-visual*/
+#main-visual {width: 100%;height: 93vh;margin: 0;background: url(../img/main_mobile.png) no-repeat center/cover;}
+#main-visual .main-bg,
+#main-visual .main-cont,
+#main-visual .main-cont .login-area {display: none}
+#main-visual .main-cont .main-btn {width: 100vw;}
+#main-visual .main-cont .main-btn .btn {float: none;width: 100%;height: 100%;margin: 15px auto;font-size: 1.8rem;}
+#main-visual .main-cont .main-btn .btn:last-child:before {left: 46px;}
+#main-visual .mobile-cont {border: 1px solid transparent}
+#main-visual .mobile-cont .bikeclass {width: 100px;margin: 10px auto;padding: 10px;box-sizing: border-box;border-radius: 35px;background-color: #fff;}
+#main-visual .mobile-cont .bikeclass > li {text-align: center;}
+#main-visual .mobile-cont .bikeclass > li > a {letter-spacing: -0.9px;font-weight: 500;color: #555}
+#main-visual .mobile-cont .bikeclass > li + li {display: none;margin-top: 8px}
+#main-visual .mobile-cont .ticket {width: 80%;padding: 8px 0;margin: -18px auto;text-align: center;border-radius: 9px;color: rgba(255,255,255,.95);background: rgba(0,0,0,.7)}
+#main-visual .mobile-cont .map-bot {position: absolute;width: 100%;bottom: 10px}
+#main-visual .mobile-cont .map-bot .map-btn {overflow: hidden}
+#main-visual .mobile-cont .map-bot .map-btn > a {float: left;width: 45px;height: 45px;margin: 10px 20px;font-size: 2.5rem;text-align: center;line-height: 1.9;background-color: #fff;border-radius: 50%;}
+#main-visual .mobile-cont .map-bot .map-btn > a:nth-child(2) {float: right;margin-left: 0}
+#main-visual .mobile-cont .map-bot .mobile-rental {padding: 2% 0;background-color: #fff;border-radius: 35px}
+#main-visual .mobile-cont .map-bot .mobile-rental .mobile-rental-inner {padding: 1.5% 7%;box-sizing: border-box;}
+#main-visual .mobile-cont .map-bot .mobile-rental .mobile-main-text {overflow: hidden;padding: 6px 0 3px 0;border-bottom: 1px solid #d9d9dd}
+#main-visual .mobile-cont .map-bot .mobile-rental .mobile-main-text h3 {float: left;margin-bottom: 10px;font-weight: 800;color: #333}
+#main-visual .mobile-cont .map-bot .mobile-rental .mobile-main-text .btn-down {float: right;width: 24px;height: 32px;background: url(../img/logo_minus.png) no-repeat center/contain}
+#main-visual .mobile-cont .map-bot .mobile-rental .mobile-main-text .btn-down.on {width: 19px;background-image: url(../img/logo_plus.png)}
+#main-visual .mobile-cont .map-bot .mobile-rental ul {overflow: hidden;padding: 15px 0 10px 0}
+#main-visual .mobile-cont .map-bot .mobile-rental ul > li {float: left;margin-bottom: 10px;width: 100%;}
+#main-visual .mobile-cont .map-bot .mobile-rental ul > li:last-child {margin-bottom: 0}
+#main-visual .mobile-cont .map-bot .mobile-rental ul > li > h4 {float: left;font-size: 1.8rem;font-weight: 500;color: #333;letter-spacing: -0.2px}
+#main-visual .mobile-cont .map-bot .mobile-rental ul > li > .rental-info {position: relative;margin-right: 18px;text-align: right;float: right;}
+#main-visual .mobile-cont .map-bot .mobile-rental ul > li > .rental-info:after {content: '';position: absolute;width: 13px;height: 19px;right: -18px;bottom: 3px;background: url(../img/ico_place.png) no-repeat center/contain}
+#main-visual .mobile-cont .map-bot .mobile-rental ul > li > .rental-info > p {position: relative;display: inline-block;width: 30px;font-size: 1.55rem;font-weight: 500;letter-spacing: -1px;margin-right: 13px;}
+#main-visual .mobile-cont .map-bot .mobile-rental ul > li > .rental-info > p:before {content: '';position: absolute;width: 14px;height: 21px; left: -17px;top: 0;background: url(../img/ico_walk.png) no-repeat center/contain}
+#main-visual .mobile-cont .map-bot .mobile-rental ul > li:nth-child(2) > .rental-info > p:before {background-image: url(../img/ico_road.png)}
+#main-visual .mobile-cont .map-bot .mobile-rental ul > li > .rental-info > a {font-weight: 500}
+#main-visual .mobile-cont .map-bot .mb-main-btn {margin-left: 2%;width: 100%}
+#main-visual .mobile-cont .map-bot .mb-main-btn > a {display: inline-block;width: 48%;box-sizing: border-box;color: #01ab52;font-weight: 500;line-height: 3;border-color: #01ab52;border-radius: 10px}
+#main-visual .mobile-cont .map-bot .mb-main-btn > a:last-child {color: #fff;background-color: #01ab52}
+#main-visual .mobile-cont {display: block;}
+
+/*main*/
+#info {display: none}
+#chat {display: none}
+#guide .contents h2 {width: 100%;margin: 20px 0;padding: 0 20px;box-sizing: border-box;text-align: center}
+#guide .contents h2:before {content: '';position: relative;display: block;width: 95px;height: 1px;left: 0;margin: 10px auto;border-top: 3.5px solid #01ab52;}
+#guide .contents {float: none;}
+#guide .contents ul {width: 100%;margin: 0;padding: 0 20px;box-sizing: border-box}
+#guide .contents ul li {width: 100%;margin: 0 auto;padding: 15px 0;}
+#guide .contents ul li a:after {top: 42%;}
+#guide .video-cont {float: none;width: 100%;height: auto;margin-top: 70px;}
+#place {margin-bottom: 40px}
+#place .contents {float: none;width: 100%;height: auto;margin-top: 0;padding: 20px 5px;box-sizing: border-box}
+#place .place-info {float: none;text-align: center;font-size: 1.6rem}
+#place .place-info:before {content: '';display: inline-block;margin-bottom: -4px;margin-right: 5px;width: 25px;height: 25px;background: url(../img/ico_placepointer2.png) no-repeat bottom}
+#place .contents > p {width: 90%;font-size: 1.95rem;line-height: 2;margin: 20px auto}
+#place .contents > a {position: relative;width: 90%;height: 65px;margin-top: 30px;font-size: 1.9rem;color: #fff;border-radius: 34px;background-color: #01ab52;line-height: 3.7} 
+#place .place-img {float: none;width: 100%}
+#place .picdesc {position: absolute;height: 470px;padding: 60px 0;box-sizing: border-box;top: 0;background-color: #000}
+#place .picdesc > figure {width: 100%}
+#place .picdesc > .text > h4 {margin: 15px 0;}
+#with {display: none}
+
+/*footer*/
+footer {height: auto;padding: 20px 30px;box-sizing: border-box}
+footer ul {padding: 5px 2px;margin-bottom: 0}
+footer ul li {}
+footer ul li > a {font-size: 1.35rem;}
+footer address {margin-top: 5px;}
+footer address > span {display: block}
+footer address > span:last-child {margin: 0}
+footer address > span:last-child:before {margin-left: -2px}
+footer .copy {font-size: 1rem;text-align: left;opacity: .5}
+footer .sns {display: block;text-align: left;padding: 15px 0 10px 0;position: relative;right: 0;top: 0;transform: none}

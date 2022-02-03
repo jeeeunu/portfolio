@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/*common*/
+html {font-size: 10px}
+body {font: 400 1.8rem 'IBM Plex Sans KR', sans-serif; color: #333;letter-spacing: -0.8px}
+#wrap {}
+button {cursor: pointer}
+.hide {display: none}
+.block {display: block}
+
+/*header*/
+header {position: absolute;top: 0;width: 100%;background-color: rgba(255,255,255,.7);z-index: 100}
+header .top-head {position: relative;height: 55px;box-sizing: border-box}
+header .top-head h1 {font: 1.8rem 'Lexend Zetta', sans-serif;text-align: center;line-height: 3.4}
+header .top-head > a {position: absolute;top: 17px;left: 3%}
+header .top-head .bag-btn {left: auto;right: 3%}
+header .top-head > a > img {width: 27px;height: 27px;}
+header nav {position: absolute;top: 0;width: 100%;height: 100vh;padding: 160px 50px;box-sizing: border-box;background-color: #505786}
+header nav a {display: block;}
+header nav .plus-btn {display: inline-block;margin-left: 5px;width: 14px;height: 14px;background: url(../img/plus.png) no-repeat center/cover;vertical-align: middle}
+header nav .plus-btn.on {background-image: url(../img/minus.png)}
+header nav .tlist > a {height: 55px;font-size: 2.3rem;font-weight: 600;color: #fff}
+header nav .mlist {margin-left: -8px;border-radius: 20px;background-color: #fff;opacity: .95;overflow: hidden}
+header nav .mlist > li > a {padding: 10px 20px;box-sizing: border-box;border-bottom: 1.5px solid #d6d6d6;font-size: 1.6rem;font-weight: 600;color: #505786;}
+header nav .blist > li a {height: 40px;padding: 10px 30px;box-sizing: border-box;border-bottom: 1px solid #d8d8d8;font-size: 1.45rem;color: #444}
+header nav .logo {position: absolute;top: 4%;left: 50px;font: 500 2rem 'Lexend Zetta', sans-serif;color: rgb(255, 109, 2,.7)}
+header nav .close-btn {position: absolute;font-size: 2.8rem;top: 2.5%;right: 5%;color: rgba(255,255,255,.85)}
+
+/*main-visual*/
+#main-visual {height: 75vh}
+#main-visual .swiper {height: 100%}
+#main-visual .swiper .swiper-wrapper {height: 100%}
+#main-visual .swiper .swiper-wrapper .swiper-slide {background: url(../img/main2.png) no-repeat center/cover}
+#main-visual .swiper .swiper-wrapper .swiper-slide:nth-child(2) {background: url(../img/main.png) no-repeat center/cover}
+#main-visual .swiper .swiper-wrapper .swiper-slide:nth-child(3) {background: url(../img/main3.png) no-repeat center/cover}
+#main-visual .swiper .swiper-wrapper .swiper-slide:nth-child(4) {background: url(../img/main4.png) no-repeat center/cover}
+.swiper-button-next, .swiper-button-prev {color: #666}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {font-size: 2.5rem}
+.swiper-button-next:after, .swiper-button-prev:after {font-size: 2rem}
+/*rank-area*/
+#now-area {}
+#now-area h2 {margin: 20px 25px;font-size: 1.8rem;font-weight: 500;color: #444}
+#now-area h2 > span {font: 500 1.8rem 'Lexend Zetta', sans-serif;color: #505786}
+#now-area h2 > span:last-child {font-size: 1.3rem;letter-spacing: -1px;color: #555}
+#now-area ul {width: 410px;margin: 0 auto;overflow: hidden}
+#now-area ul li {float: left;margin-right: 25px;width: 120px;height: 120px;background: url(../img/now-list1.png) no-repeat center/cover;border-radius: 50%}
+#now-area ul li:nth-child(2) {background-image: url(../img/now-list2.png)}
+#now-area ul li:last-child {margin-right: 0;background-image: url(../img/now-list3.png)}
+#now-area ul li > a {display: block;height: 100%}
+#now-area ul li img {width: 50px}
+
+/*모바일*/
+@media screen and (min-width: 325px) and (max-width: 400px) {
+    #main-visual {height: 78vh}
+    #now-area h2 {margin: 20px 15px;}
+    #now-area ul {width: 315px}
+    #now-area ul li {margin-right: 15px;width: 95px;height: 95px}
+    #now-area ul li img {width: 40px}
+    }
+@media screen and (min-width: 400px) and (max-width: 420px) {
+    #now-area ul {width: 340px}
+    #now-area ul li {margin-right: 20px;width: 100px;height: 100px}
+    #now-area ul li img {width: 45px}
+    }
+@media screen and (min-width: 530px) {
+    #now-area ul {width: 510px}
+    #now-area ul li {margin-right: 30px;width: 150px;height: 150px}
+    #now-area ul li img {width: 60px}
+    }

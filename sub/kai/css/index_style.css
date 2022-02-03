@@ -1,0 +1,250 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/*common*/
+html {font-size: 10px}
+body {font: 1.6rem 'Noto Sans KR', sans-serif; color: #333;}
+button {cursor: pointer}
+.block {display: block}
+.hide {display: none}
+input:focus {outline:none;}
+.mainh2 {opacity: 0;margin-left: -200px}
+h2 {font: 300 5rem 'Titillium Web', sans-serif; color: #222;letter-spacing: 0;}
+h3 {font: 200 7rem 'Titillium Web', 'Noto Sans KR', sans-serif;letter-spacing: -0.9px}
+h4 {font-weight: 500;color: #222}
+.inner {width: 63%;margin: 0 auto}
+.inner-w {width: 90%;margin: 0 auto}
+.inner-s {width: 72%;margin: 0 auto}
+.sub-text {display: inline-block;margin-left: 5px;font-size: 2.4rem;font-weight: 500;color: #555}
+.text {font-weight: 400;color: #666;line-height: 1.8}
+.text-box {position: relative;opacity: 0;bottom: -100px}
+
+.btn-more {display: inline-block;position: relative;width: 185px;height: 55px;margin-top: 30px;font: 600 1.4rem 'Titillium Web';color: #444;letter-spacing: 0.7px;border: 1px solid #111;overflow: hidden}
+.btn-more > span {display: block;height: inherit;text-align: center;line-height: 4}
+.btn-more:after {content: '';position: absolute;width: 0%;height: 170%;top: -18px;left: -10px;transition: all 0.45s;background-color: #222;transform: rotate(10deg)}
+.btn-more:hover {color: #fff}
+.btn-more:hover:after {width: 115%;z-index: -1}
+.btn-more.white {color: #fff;border: 1px solid #fff;z-index: 50}
+.btn-more.white:after {background-color: #fff}
+.btn-more.white:hover {color: #222;z-index: 100}
+.btn-more.white:hover:after {width: 115%;z-index: -1}
+.circle-right {display: inline-block;position: relative;width: 35px;height: 35px;font-size: 1rem;border: 1px solid #acacac;border-radius: 50%;color: #acacac}
+.circle-right > i {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%)}
+
+/*모바일*/
+.mb-menu-btn {display: none}
+.mb-close-btn {display: none}
+
+/*header*/
+header {position: fixed;width: 100%;height: 88px;top: 2%;z-index: 100}
+header #header-wrap {position: relative;width: 90%;height: 100%;margin: 0 auto;background-color: #fff}
+header #header-wrap h1 {position: absolute;width: 150px;height: 30px;left: 2.8%;top: 50%;transform: translateY(-50%);background: url(../img/logo.png) no-repeat center/contain;}
+header #header-wrap h1 > a {display: block;width: 100%;height: 100%}
+
+/*고정헤더*/
+header.on {top: 0;height: 80px;background-color: #fff}
+
+/*nav*/
+header #header-wrap nav {height: inherit}
+header #header-wrap nav > .main-menu {position: absolute;width: 850px;height: auto;top: 50%;left: 50%;transform: translate(-50%, -50%);overflow: hidden}
+header #header-wrap nav > .main-menu > a {display: block;float: left;width: calc(100%/6 - 0.4em);height: 100%;top: 50%;margin: 0 0.2em;padding: 2em 0 ;box-sizing: border-box;font-size: 1.78rem;font-weight: 500;text-align: center;}
+header #header-wrap nav > .main-menu > a:hover {color: #1d9bd6}
+header #header-wrap nav > .main-menu > a:last-child {margin-right: 0}
+header #header-wrap .lang-area {position: absolute;top: 50%;right: 5%;transform: translateY(-50%);}
+header #header-wrap .lang-area > a {font: 700 1.15rem 'Titillium Web';letter-spacing: 0.8px}
+header #header-wrap .lang-area > a:after {content: '';display: inline-block;position: relative;left: 2.5px;width: 1px;height: 8px;margin: 0 0.4em;background-color: #d1d1d1}
+header #header-wrap .lang-area > a:last-child:after {display: none}
+header #header-wrap .lang-area .kor {color: #1d9bd6}
+header #header-wrap .search {position: absolute;margin-left: 5px;bottom: 28%; right: 2.8%;font-size: 2.2rem}
+/*search-window*/
+header .search-window {position: absolute;width: 100%;top: -20px;background-color: #fff}
+header .search-window form {position: relative;width: 55%;height: 250px;margin: 0 auto;padding: 4em 0 1em 0;box-sizing: border-box}
+header .search-window form > label {font-size: 1.65rem;color: #999}
+header .search-window form .search-text {margin: 2.5em 0;border-bottom: 4px solid #f4f4f4}
+header .search-window form .search-text.black {position: relative;border-bottom: 4px solid #000;color: #000;transition: all .2s;z-index: 1}
+header .search-window form .search-text input {display: inline-block;width: 81%;font-size: 4rem;border: none;}
+header .search-window form .search-text button {position: absolute;right: 0;background-color: transparent;font-size: 3.65rem;color: #f4f4f4;border: none}
+header .search-window form .search-text button.black {color: #000}
+header .search-window form > a {position: absolute;right: -28%;top: 45px;font-size: 3.65rem;}
+/*sub-menu*/
+header #header-wrap nav .sub-menu-area {display: none;position: absolute;width: 100%;top: 100%;left: 50%;transform: translateX(-50%);background-color: rgba(0, 0, 0, 0.83);background-image: url(../img/menu-typo.png);background-position: bottom right;background-repeat: no-repeat}
+header #header-wrap nav .sub-menu-area .sub-menu {width: 850px;margin: 0 auto;}
+header #header-wrap nav .sub-menu-area .sub-menu > ul {position: relative;float: left;width: calc(100%/6 - 0.4em);margin: 0.2em;text-align: center}
+header #header-wrap nav .sub-menu-area .sub-menu > ul:after {content: '';position: absolute;top: 0;right: 0;width: 1px;height: 286px;background-color: #505050;}
+header #header-wrap nav .sub-menu-area .sub-menu > ul > li {padding: 0.5em 0;box-sizing: border-box}
+header #header-wrap nav .sub-menu-area .sub-menu > ul > li:first-child {padding-top: 1.35em;}
+header #header-wrap nav .sub-menu-area .sub-menu > ul:first-child > li:last-child {padding-bottom: 2.3em}
+header #header-wrap nav .sub-menu-area .sub-menu > ul > li > a {color: rgba(136,136,136)}
+header #header-wrap nav .sub-menu-area .sub-menu > ul > li > a:hover {color: rgba(244,244,244);transition: all 0.2s}
+header #header-wrap nav .sub-menu-area .sub-menu > ul > .last-child {padding-bottom: 1.3em}
+
+/*main*/
+/*#main-visual-area*/
+#main-visual-area {width: 100%;height: 110vh}
+/*swiper*/
+.swiper {position: relative;width: 100%;height: 100%}
+.swiper-slide {width: 100%;height: 100%;background: no-repeat center}
+.swiper .bg1 {background-image: url(../img/main-visual-01-motion.jpg)}
+.swiper .bg2 {background-image: url(../img/main-visual-02.jpg)}
+.swiper .bg3 {background-image: url(../img/main-visual-03-v2.jpg)}
+.swiper .main-text {position: absolute;width: 100%;top: 46%;left: 50%;transform: translate(-50%,-50%);text-align: center}
+.swiper .main-text > h2 {font-size: 9rem;font-weight: 200;color: #fff}
+.swiper .main-text > span {display: block;margin-bottom: -20px;font-size: 2.55rem;text-align: center;color: #fff;opacity: 0}
+.swiper-pagination {margin-right: 5%}
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {margin: 11.5px 0}
+.swiper-pagination-bullet {width: 9px; height: 9px; background-color: #fff ;opacity: 1}
+.swiper-pagination-bullet-active { width: 9px;height: 28px; transition: width .5s; border-radius: 5px; background: #fff;}
+.slide-btn {width: 50px;height: 40px;}
+.slide-btn > a {position: absolute;top: 54.5%;right: 5.33%;font-size: 1.7rem;color: #fff; z-index: 11}
+/*스크롤 다운 모션*/
+#main-visual-area .spinner {position: absolute;height: 70px;bottom: 13%;left: 50%;transform: translateX(-50%);z-index: 100;transition: all 0.4s;}
+#main-visual-area .spinner:hover {background-color: rgba(255,255,255,0.15)}
+#main-visual-area .spinner .rect {fill: none;stroke-width: 1px;stroke: white;stroke-dasharray: 40;stroke-dashoffset: 50%;animation: movedash 1.5s forwards 0s infinite;}
+@keyframes movedash {
+    to {stroke-dashoffset: 250%;}}
+#main-visual-area .spinner i {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size: 22px;color: #fff;opacity: 0.8}
+
+/*business-common*/
+#business-area h2 {padding-top: 4em;box-sizing: border-box;font: 300 3.5rem 'Titillium Web', sans-serif;color: #222;letter-spacing: 1.3px}
+#business-area h3 {margin-top: -10px;letter-spacing: -0.9px}
+#business-area .text-box {width: 300px;margin: 50px 0;}
+
+/*business*/
+#business-area {position: relative;height: 1450px;width: 63%;margin: 0 auto}
+#business-area .business-ethanol .text-box {}
+#business-area .ethanol-media {position: absolute;right: 5%;top: -90px;z-index: 5}
+#business-area .ethanol-media > video {width: 100%;height: 100%}
+#business-area .chemistry {position: absolute;width: 75%;height: 90%;right: -15%;bottom: -80px;background: url(../img/main-business-03.jpg) no-repeat center/cover;background-attachment: fixed}
+#business-area .chemistry .text-box {margin-top: 700px;margin-left: 250px;}
+#business-area .chemistry .text-box h3 {color: #fff}
+#business-area .chemistry .text-box .text {color: #fff}
+#business-area .chemistry .text-box .sub-text {color: #fff}
+#business-area .chemistry-media {position: absolute;left: 0;bottom: -40px;z-index: 5}
+#business-area .chemistry-media > img {width: 100%;height: 100%}
+#color-paste-area {margin: 0 auto;width: 90%;height: 650px;background: url(../img/business-colorpaste-bg.jpg) no-repeat center/cover}
+#color-paste-area .text-box {padding-top: 13em;box-sizing: border-box}
+#color-paste-area h3 {color: #fff}
+#color-paste-area .sub-text {color: #fff;}
+#color-paste-area .text {color: #fff;}
+
+/*chemical*/
+#chemical-area {margin: 100px 0;text-align: center}
+#chemical-area h2 {margin-bottom: 60px;text-align: center}
+#chemical-area ul {overflow: hidden}
+#chemical-area ul li {float: left;width: calc(100%/3 - 24px);margin: 0 12px;}
+#chemical-area ul li figure {max-width: 400px}
+#chemical-area ul li figure > img {width: 100%;height: 100%;object-fit: cover;object-position: bottom}
+#chemical-area ul li > h4 {font-size: 2.3rem;margin: 1em 0 0.8em 0}
+#chemical-area .btn-more {position: relative}
+#chemical-area .btn-more > span {padding-right: 30px;}
+#chemical-area .btn-more > i {position: absolute;right: 30px;top: 50%;transform: translateY(-50%);font-size: 1.9rem}
+
+/*about-area*/
+#about-area {height: 750px}
+#about-area .inner-w {background-color: #f8f8f8;height: 100%}
+#about-area .inner-s {padding: 85px 0;box-sizing: border-box}
+#about-area h2 {margin-bottom: 50px;font-size: 5.5rem;text-align: center}
+#about-area h4 {margin: 30px 0 20px 0;font-size: 1.8rem}
+#about-area ul {overflow: hidden;} 
+#about-area ul li {float: left;width: calc(100%/3 - 100px);margin: 0 50px;text-align: center} 
+
+/*about 아이콘 모션*/
+#about-area ul li svg {display: block;margin: 0 auto;margin-bottom: 30px;}
+#about-area  ul li svg path {fill: none;stroke: #1d9BD6;stroke-width: 2;stroke-miterlimit: 10;stroke-dashoffset: -1000;stroke-dasharray: 1000;animation: line-animation 5s infinite;}
+@keyframes line-animation {0% {
+stroke-dashoffset: 0;}
+50% {stroke-dashoffset: 1000;}
+100% {stroke-dashoffset: 0;}
+}
+
+/*recruit-area*/
+#recruit-area {margin-top: -200px;margin-bottom: 100px}
+#recruit-area .inner {height: 700px}
+#recruit-area .recruit-info {position: relative;float: left;width: 50%;height: 100%;background-color: #e7e7e5}
+#recruit-area .recruit-info h2 {position: absolute;top: 20%;left: 15%;font: 200 5rem 'Titillium Web', sans-serif;color: #fff}
+#recruit-area .recruit-info .man {position: absolute;bottom: 0;width: 323px;height: 749px;right: 0;background: url(../img/main-recruit.png) no-repeat top/cover}
+#recruit-area .recruit-info .info-area {position: absolute;width: 100%;height: 45%;bottom: 0;background-color: rgba(255,255,255,.9)}
+#recruit-area .recruit-info .info-area .info-text {width: 75%;margin: 10% auto}
+#recruit-area .recruit-info .info-area .info-text h3 {margin-bottom: 30px;font-size: 2.5rem;font-weight: 500}
+#recruit-area .recruit-info .info-area .info-text .text-area .time {display: block;margin: 8px 0 40px 0;font-size: 1.4rem;color: #3e3e3e}
+#recruit-area .recruit-info .info-area .info-text .text-area a .text:after {content: '';display: block;width: 72.3%;border-bottom: 1px solid #666;transition: all 0.3s;opacity: 0}
+#recruit-area .recruit-info .info-area .info-text .text-area a:hover .text:after {opacity: 1}
+#recruit-area .recruit-social {position: relative;float: right;width: 50%;height: 100%;background-image: url(../img/main-corporate.jpg)}
+#recruit-area .recruit-social .social-area {position: absolute;top: 50%;right: 50%;transform: translate(50%,-50%);width: 94%;height: 94%;}
+#recruit-area .recruit-social .social-area .text-area {position: absolute;width: 80%;top: 50%;right: 50%;transform: translate(50%,-50%);text-align: center}
+#recruit-area .recruit-social .social-area a {display: block;width: 100%;height: 100%;box-sizing: border-box;border: 1px solid rgba(255,255,255,0.3);transition: all 0.6s}
+#recruit-area .recruit-social .social-area a:hover {border: 4px solid rgba(255,255,255,0.3)}
+#recruit-area .recruit-social .social-area span {display: block;font-size: 1.6rem;color: #fff}
+#recruit-area .recruit-social .social-area strong {display: block;margin-bottom: 10px;font: 200 5.8rem 'Titillium Web', 'Noto Sans KR', sans-serif;color: #fff;line-height: 1.25;letter-spacing: -0.9px}
+#recruit-area .recruit-social .social-area .circle-right {position: absolute;top: 70%;right: 50%;transform: translate(50%,-50%);border-color: #fff;}
+#recruit-area .recruit-social .social-area .circle-right > i {color: #fff}
+
+/*news-area*/
+#news-area {margin-bottom: 100px}
+#news-area h2 {margin-bottom: 40px;text-align: center}
+#news-area .news-contents {height: auto;margin-bottom: 100px}
+#news-area .news-contents .news-list {display: block;overflow: hidden;height: 100px;border-bottom: 1px solid #ddd;transition: all 0.4s}
+#news-area .news-contents .news-list:hover {border-color: #1d9bd6}
+#news-area .news-contents .news-list .date {float: left;margin-top: -8px;width: 12%;height: 100%;color: #ddd;transition: all 0.4s}
+#news-area .news-contents .news-list:hover .date {color: #1d9bd6}
+#news-area .news-contents .news-list .date b {display: block;font: 500 5rem 'Titillium Web', sans-serif;text-align: center;letter-spacing: 1px}
+#news-area .news-contents .news-list .date span {display: block;margin-top: -0.7em;font: 400 1.8rem 'Titillium Web', sans-serif;text-align: center;letter-spacing: 1.5px}
+#news-area .news-contents .news-list .news-text {float: left;width: 83%;height: 100%;padding: 10px 30px;overflow: hidden;box-sizing: border-box;text-overflow: ellipsis;white-space: nowrap;}
+#news-area .news-contents .news-list .news-text .text-t {margin-bottom: 1em;font-size: 2rem;font-weight: 500}
+#news-area .news-contents .news-list .news-text .text-t > span {margin-right: 15px;padding: 3px 15px;box-sizing: border-box;font-size: 1.35rem;font-weight: 400;color: #1d9bd6;border: 1px solid #1d9bd6;}
+#news-area .news-contents .news-list .news-text .text-b {margin-top: -0.7em;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color: #777;}
+#news-area .news-contents .news-list .circle-right {float: right;margin-top: 25px;width: 45px;height: 45px;transition: all 0.4s}
+#news-area .news-contents .news-list:hover .circle-right {transform: scale(0.8);color: #1d9bd6;border-color: #1d9bd6}
+#news-area .news-contents .btn-more {display: block;margin: 50px auto;width: 90px;height: 55px}
+#news-area .news-contents .btn-more > span {font-size: 1.7rem;box-sizing: border-box;line-height: 3.4}
+#news-area .news-contents .btn-more > span > i {margin-right: 6.5px;font-size: 1.4rem}
+/*news-area,notice*/
+#news-area .notice-area {overflow: hidden}
+#news-area .notice-area h3 {font-size: 1.8rem;font-weight: 600;letter-spacing: 0.8px}
+#news-area .notice-area > div {float: left;width: 50%;padding: 0 3em;box-sizing: border-box}
+#news-area .notice-area .stock {position: relative;padding-left: 0;overflow: hidden}
+#news-area .notice-area .stock:after {content: '';position: absolute;width: 1px;height: 90px;top: 50%;transform: translateY(-50%);right: 0;background-color: #e7e7e5}
+#news-area .notice-area .stock b {float: left;font: 200 5rem 'Titillium Web', sans-serif;color: #ff3058;text-align: center;letter-spacing: 1px}
+#news-area .notice-area .stock .stock-about {float: right;}
+#news-area .notice-area .stock .stock-about time {font-size: 1.15rem;color: #999;letter-spacing: 0.2px}
+#news-area .notice-area .stock .stock-about time > i {margin-right: 8px;font-size: 1.55rem}
+#news-area .notice-area .stock .stock-about span {display: block;margin-top: 5px;;font-size: 1.7rem;font-weight: 300;color: #777;text-align: right}
+#news-area .notice-area .stock .stock-about span > i {position: relative;top: 7px;margin-right: 10px;font-size: 2.2rem;color: #ff3058;}
+#news-area .notice-area .ir {float: right;padding-right: 0}
+#news-area .notice-area .ir ul {margin-top: 10px;}
+#news-area .notice-area .ir ul li {overflow: hidden}
+#news-area .notice-area .ir ul li > a:hover .text {color: #1d9bd6}
+#news-area .notice-area .ir ul li .text {float: left;width: 75%;font-size: 1.5rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;transition: all 0.3s}
+#news-area .notice-area .ir ul li .date {float: right;font-weight: 300;color: #555}
+
+/*point-area*/
+#point-area {width: 100%;height: 320px;overflow: hidden;}
+#point-area > div {position: relative;float: left;width: 50%;height: 100%;overflow: hidden}
+#point-area > div > a {display: block;width: 100%;height: 100%;transition: all 0.6s;}
+#point-area > div > a .bg {width: 100%;height: 100%;background: no-repeat center/cover;transition: all 2.5s}
+#point-area > div > a:hover .bg {transform: scale(1.08);}
+#point-area > div .point-text {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align: center}
+#point-area > div .point-text > span {color: #fff}
+#point-area > div .point-text > h4 {margin-top: 2px;font: 300 3rem 'Titillium Web', sans-serif;color: #fff}
+#point-area > div .point-text > i {color: #fff}
+#point-area .office-contents > a .bg {background-image: url(../img/main-banner-office.jpg)}
+#point-area .factory-contents > a .bg {background-image: url(../img/main-banner-factory.jpg)}
+
+/*footer*/
+footer {height: 350px;background-color: #333;border: 1px solid transparent}
+footer .f-nav {overflow: hidden;margin-top: 3.5em;padding-bottom: 1.7em;box-sizing: border-box;border-bottom: 0.5px solid #444;}
+footer .f-nav li {float: left;margin-right: 1.35em;}
+footer .f-nav li a {font-size: 1.5rem;font-weight: 300;color: rgba(255,255,255,0.6);transition: all 0.3s}
+footer .f-nav li:last-child a {color: #fff;}
+footer .f-nav li a:hover {color: #fff}
+footer .f-nav li:last-child a:hover {color: rgba(255,255,255,0.6)}
+footer .f-bot {position: relative;margin: 1.7em 0 3em 0;}
+footer .f-bot li {margin-bottom: 1em;font-size: 1.25rem;font-weight: 200;color: rgba(255,255,255,0.5);letter-spacing: 1px}
+footer .f-bot li address {display: inline-block}
+footer .f-bot li > span {margin: 0 0.45em}
+footer .f-bot .copy {margin-top: 2.5em;font: 200 1.25rem 'Titillium Web', sans-serif;color: rgba(255,255,255,0.5);letter-spacing: 0.5px}
+footer .f-bot .f-logo {position: absolute;top: 0;right: 0;}
+footer .f-bot .f-logo > a {display: block;margin-bottom: 0.7em}
+footer .f-bot .f-logo > a > img {margin-right: 30px;width: 80px;height: 30px}
+footer .top-btn {position: fixed;width: 55px;height: 55px;right: 5%;bottom: 5%;display: none;background-color: #222;z-index: 999}
+footer .top-btn > i {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);color: #fff}

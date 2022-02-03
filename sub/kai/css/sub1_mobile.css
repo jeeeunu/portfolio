@@ -1,0 +1,138 @@
+@media screen and (min-width: 1331px) and (max-width: 1680px) {
+    .inner {width: 70%}
+    .inner-s {width: 80%}
+    .slide-btn > a {right: 5.35%}
+    }
+
+@media screen and (min-width: 1101px) and (max-width: 1330px) {
+    html {font-size: 9px}
+    .inner {width: 85%}
+    .inner-s {width: 85%}
+    .inner-sub {width: 80%}
+    header #header-wrap nav > .main-menu {width: 630px}
+    header #header-wrap nav .sub-menu-area .sub-menu {width: 630px}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul:after {height: 252px;}
+    #aboutus-container .contents {margin-bottom: 100px}
+    #aboutus-container .sub-visual-area {height: 400px}
+    #history-container .company {height: 450px}
+    #history-container .inner-sub {padding: 80px 0}
+    .slide-btn > a {right: 5.6%}
+    .btn-more > span {line-height: 4.5}
+    }
+
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+    html {font-size: 8.5px}
+    .inner {width: 90%}
+    .inner-s {width: 95%}
+    .inner-sub {width: 95%}
+    header {top: 0}
+    .mb-menu-btn {display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 2.8%;font-size: 4rem;color: #fff}
+    .mb-menu-btn.on {color: #444}
+    .mb-close-btn {display: block;position: absolute;top: 1%;left: -50px;font-size: 4rem;color: #fff}
+
+    header #header-wrap {width: 100%;background-color: transparent}
+    header #header-wrap h1 {background-image: url(../img/mb-logo.png)}
+    header #header-wrap h1.on {background-image: url(../img/logo.png)}
+    header #header-wrap nav {position: absolute;width: 50%;height: 1000px;top: 0;right: -100%;background-color: #fff;z-index: 1}
+    header #header-wrap nav.on {right: 0}
+    header #header-wrap nav > .main-menu {position: absolute;width: 100%;padding: 0 1em;top: 5.8%;left: 0;transform: none;box-sizing: border-box;border-top: 1px solid #222}
+    header #header-wrap nav > .main-menu > a {position: relative;float: none;width: 100%;margin: 0;padding: 0.9em 0;border-bottom: 1px solid #e2e2e2;text-align: left}
+    header #header-wrap nav > .main-menu > a:after {content: '\f054';position: absolute;bottom: 15px;right: 2%;font-family: 'Font Awesome 5 Free';font-size: 1.25rem;font-weight: 600;color: #999;}
+    header #header-wrap .lang-area {left: 5%;top: 3%;box-sizing: border-box;}
+    header #header-wrap .lang-area > a {font-size: 1.4rem}
+    header #header-wrap .search {top: 2%;right: 6%}
+    header #header-wrap .search > i {font-size: 2.3rem}
+    header #header-wrap nav .sub-menu-area {position: absolute;top: 5.8%;border-top: 1px solid #222}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul {position: absolute;float: none;right: 0;width: 50%;height: 1000vh;margin: 0;padding: 0 1.5em;box-sizing: border-box;text-align: left;background-color: #f2f2f2}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul > li {padding: 0.8em 0;font-weight: 500;}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul > li > a {font-size: 1.7rem;font-weight: 400}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul > li:first-child {padding-top: 1.1em}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul:after {display: none}
+    .slide-btn > a {display: none}
+    header .search-window {width: 50%;right: 0;z-index: 11}
+    header .search-window form {width: 80%;height: auto;padding: 3em 0 0.5em 0}
+    header .search-window form > a {right: -20px;top: 36px;font-size: 2.7rem}
+    header .search-window form .search-text input {font-size: 2rem;}
+    header .search-window form .search-text button {top: 85px;font-size: 3rem}
+    header .search-window form .search-text button.black {position: absolute;top: -10px;right: 0;font-size: 3rem}
+    header .search-window {width: 50%;right: 0;z-index: 11}
+    header .search-window form {width: 80%;height: auto;padding: 3em 0 0.5em 0}
+    header .search-window form > a {right: -20px;top: 30px;font-size: 3rem}
+    header .search-window form .search-text input {font-size: 2rem;}
+    header .search-window form .search-text button {top: 85px;font-size: 3rem}
+    header .search-window form .search-text button.black {position: absolute;top: 85px;right: 0;font-size: 3rem}
+    #aboutus-container nav {padding: 40px 0}
+    #aboutus-container .contents {margin-bottom: 100px}
+    #aboutus-container .contents li {margin: 0}
+    #aboutus-container .contents li .text-box {top: 50%;opacity: 1}
+    #aboutus-container .contents li:last-child {top: 0}
+    #aboutus-container .sub-visual-area {height: 330px}
+    #history-container .company {height: 400px}
+    #history-container .inner-sub {padding: 50px 0}
+    .btn-more > span {line-height: 4.8}
+    footer .f-bot .f-logo {top: inherit}
+}
+
+
+@media screen and (max-width: 700px) {
+    html {font-size: 8px}
+    body {font-size: 1.8rem}
+    .inner {width: 95%}
+    .inner-s {width: 98%}
+    .inner-w {width: 100%}
+    .inner-sub {width: 95%}
+    h3 {font-size: 5rem}
+    header {width: 100vw;top: 0}
+    .mb-menu-btn {display: block;position: absolute;top: 50%;transform: translateY(-50%);right: 2.8%;font-size: 4rem;color: #fff}
+    .mb-menu-btn.on {color: #444}
+    .mb-close-btn {display: block;position: absolute;top: 1%;left: -50px;font-size: 4rem;color: #fff}
+    .sub-text {font-weight: 400}
+    .text {font-size: 1.9rem}
+    .text-box {transform: none;opacity: 1}
+    header #header-wrap {width: 100%;background-color: transparent}
+    header #header-wrap h1 {background-image: url(../img/mb-logo.png)}
+    header #header-wrap h1.on {background-image: url(../img/logo.png)}
+    header #header-wrap nav {position: absolute;width: 70%;height: 1000px;top: 0;right: -100%;background-color: #fff;z-index: 1}
+    header #header-wrap nav.on {right: 0}
+    header #header-wrap nav > .main-menu {position: absolute;width: 100%;padding: 0 1em;top: 5.8%;left: 0;transform: none;box-sizing: border-box;border-top: 1px solid #222}
+    header #header-wrap nav > .main-menu > a {position: relative;float: none;width: 100%;margin: 0;padding: 0.9em 0;border-bottom: 1px solid #e2e2e2;text-align: left}
+    header #header-wrap nav > .main-menu > a:after {content: '\f054';position: absolute;bottom: 15px;right: 2%;font-family: 'Font Awesome 5 Free';font-size: 1.25rem;font-weight: 600;color: #999;}
+    header #header-wrap .lang-area {left: 5%;top: 3%;box-sizing: border-box;}
+    header #header-wrap .lang-area > a {font-size: 1.4rem}
+    header #header-wrap .search {top: 2%;right: 6%}
+    header #header-wrap .search > i {font-size: 2.3rem}
+    header #header-wrap nav .sub-menu-area {position: absolute;top: 5.8%;border-top: 1px solid #222}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul {position: absolute;float: none;right: 0;width: 50%;height: 1000vh;margin: 0;padding: 0 1.5em;box-sizing: border-box;text-align: left;background-color: #f2f2f2}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul > li {padding: 0.8em 0;font-weight: 500;}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul > li > a {font-size: 1.7rem;font-weight: 400}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul > li:first-child {padding-top: 1.1em}
+    header #header-wrap nav .sub-menu-area .sub-menu > ul:after {display: none}
+    header .search-window {width: 70%;right: 0;z-index: 11}
+    header .search-window form {width: 80%;height: auto;padding: 3em 0 0.5em 0}
+    header .search-window form > a {right: -20px;top: 36px;font-size: 2.7rem}
+    header .search-window form .search-text input {font-size: 2rem;}
+    header .search-window form .search-text button {top: 85px;font-size: 3rem}
+    header .search-window form .search-text button.black {position: absolute;top: -10px;right: 0;font-size: 3rem}
+    #visual-area .text-area {width: 100%;padding: 0 30px;box-sizing: border-box}
+    #visual-area .text-area h2 {font-size: 7rem}
+    #aboutus-container nav {padding: 40px 0}
+    #aboutus-container .contents {margin-bottom: 100px}
+    #aboutus-container .contents li {margin: 0;height: auto}
+    #aboutus-container .contents li:last-child {top: 0}
+    #aboutus-container .contents li .text-box {position: relative;float: none;margin: 20px 0;top: 0;transform: none;width: 100%;opacity: 1}
+    #aboutus-container .contents li:last-child .text-box {transform: none}
+    #aboutus-container .contents li figure {float: none;width: 100%;height: 300px}
+    #aboutus-container .contents li figure > img {object-fit: cover}
+    #aboutus-container .sub-visual-area {height: 250px}
+    #history-container .company {margin: 50px auto;width: 80%;height: 400px}
+    #history-container .inner-sub {padding: 50px 0}
+    #history-container .history-area h3 {margin-bottom: 10px}
+    #history-container .history-area .history-main li {width: calc(100%/2 - 1px)}
+    #history-container .history-area .history-main li figure {height: 260px}
+    #history-container .history-area .history-main li figure > img {object-fit: cover}
+    #history-container .history-area .history-all > li ul {width: 65%}
+    .slide-btn > a {right: 6.25%}
+    .btn-more {width: 300px;font-size: 1.8rem}
+    .btn-more > span {line-height: 3.9}
+    footer .f-bot .f-logo {top: inherit}
+}

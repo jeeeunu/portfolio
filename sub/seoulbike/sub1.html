@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>따릉이 이용권</title>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub1_style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/sub1_script.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+        <div class="top-head">
+            <div class="inner">
+                <div class="top-cont">
+                    <div class="search">
+                        <input type="text" placeholder="검색어 입력" required><button type="button"></button>
+                    </div>
+                    <div class="lang-area">
+                        <a href="#" class="lang"><figure></figure>Language<i class="fas fa-globe"></i></a>
+                        <ul class="lang-list">
+                            <li><a href="#">한국어</a></li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">中國語</a></li>
+                            <li><a href="#">日本語</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-head">
+            <div class="inner">
+                <h1><a href="index.html" class="blind">서울자전거 따릉이</a></h1>
+                <nav class="gnb-area">
+                   <ul class="gnb">
+                       <li><a href="#">이용안내</a></li>
+                       <li><a href="sub1.html">이용권 안내</a></li>
+                       <li><a href="#">공지사항</a></li>
+                       <li><a href="#">마이페이지</a></li>
+                   </ul>
+                   <a href="#" class="mb-btn-close hide"><i class="xi-close"></i></a>
+                   <div class="sub-area">
+                       <ul class="sub-menu">
+                           <li>
+                               <ul>
+                                   <li><a href="#">대여 방법</a></li>
+                                   <li><a href="#">반납 방법</a></li>
+                                   <li><a href="#">대여소 현황</a></li>
+                                   <li><a href="#">안내 수칙</a></li>
+                                   <li><a href="#">서울시 자전거<br> 도로 및 코스</a></li>
+                               </ul>
+                           </li>
+                           <li>
+                               <ul>
+                                   <li><a href="#">이용권 구매</a></li>
+                                   <li><a href="#">선물하기</a></li>
+                               </ul>
+                           </li>
+                           <li>
+                               <ul>
+                                   <li><a href="#">고객의 소리</a></li>
+                                   <li><a href="#">공지사항</a></li>
+                               </ul>
+                           </li>
+                           <li>
+                               <ul>
+                                   <li><a href="#">내 이용권</a></li>
+                                   <li><a href="#">이용내역</a></li>
+                                   <li><a href="#">결제 수단 등록/변경</a></li>
+                                   <li><a href="#">결제/환불</a></li>
+                                   <li><a href="#">쿠폰/마일리지 관리</a></li>
+                               </ul>
+                           </li>
+                       </ul>
+                   </div>
+                </nav>
+                <div class="mobile-head hide">
+                    <a href="#" class="mb-btn-menu"><i class="xi-bars"></i></a>
+                    <div class="mb-box">
+                        <a href="#" class="mb-search"><i class="xi-search"></i><span>검색</span></a>
+                        <a href="#" class="mb-users"><i class="xi-user-o"></i><span>내정보</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="inner">
+            <div id="main-visual">
+                <div class="location">
+                   <a href="index.html"><i class="xi-home"></i>home</a><i class="fas fa-chevron-right"></i>
+                   <a href="sub1.html">이용권 안내</a>
+                </div>
+                <a href="#" class="paypage-btn"><img src="img/ico_ticket.png" alt="이용권 아이콘"><p>이용권 구매하기</p></a>
+            </div>
+            <div id="tabs">
+                <a href="#info-area">이용권 구매방법</a>
+                <a href="#ticket-area">이용권 금액안내</a>
+                <a href="#pay-area">미납요금 결제</a>
+                <a href="#rental-number">대여번호 조회</a>
+            </div>
+            <!--탭 콘텐츠-->         
+            <ul id="tabs-cont">
+                <li id="info-area">
+                    <div class="tabs-inner">
+                        <div class="info-main">
+                            <h3>이용권 구매방법 안내</h3>
+                            <ul>
+                                <li>
+                                    <figure></figure>
+                                    <p class="text"><span>STEP.01</span>"이용권 구매" 버튼</p>
+                                </li>
+                                <li>
+                                    <figure></figure>
+                                    <p class="text"><span>STEP.02</span>이용권 선택 (1시간제,2시간제) 및 결제</p>
+                                </li> 
+                                <li>
+                                    <figure></figure>
+                                    <p class="text"><span>STEP.03</span>대여번호 확인 (1~6로 구성된 8자리)</p>
+                                </li>   
+                            </ul>
+                            <p>* 휴대폰 소액결제 시 대여번호가 문자로도 발송되며, 신용카드 결제시에는 휴대폰번호를 추가 등록하여야 문자로 받을 수 있습니다.</p>
+                        </div>
+                        <div class="info-guide">
+                            <div class="info-number">
+                                <h4>대여번호 - 자전거 선택 후 대여번호 입력방법</h4>
+                                <div class="number-area num1">
+                                    <div>
+                                        <figure><img src="img/num_step01.png" alt="단말기 안내이미지"></figure>
+                                        <p class="text"><span>STEP.01</span>단말기 버튼을 누르세요.</p>
+                                    </div>
+                                    <div>
+                                        <figure><img src="img/num_step02.png" alt="대여번호 입력이미지1"></figure>
+                                        <p class="text"><span>STEP.02</span>대여번호 입력버튼 선택</p>
+                                    </div>
+                                </div>
+                                <div class="number-area num2">
+                                    <div>
+                                        <figure><img src="img/num_step03.png" alt="대여번호 입력이미지2"></figure>
+                                        <p class="text"><span>STEP.03</span>대여번호 8자리 중 앞 4자리 입력
+                                    </div>
+                                    <div>
+                                        <figure><img src="img/num_step04.png" alt="대여번호 입력이미지3"></figure>
+                                        <p class="text"><span>STEP.04</span>대여번호 8자리 중 뒤 4자리 입력</p>
+                                    </div>
+                                </div>
+                                <div class="info-return">
+                                    <h4>따릉이 대여소에서 반납 가능합니다.</h4>
+                                    <ul>
+                                        <li>
+                                            <p class="text"><span>STEP.01</span>반납할 거치대로 이동하세요.</p>
+                                        </li>
+                                        <li>
+                                            <p class="text"><span>STEP.02</span>단말기에 잠금장치를 결합하세요.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div> 
+                </li>
+                <li id="ticket-area">
+                    <div class="tabs-inner">
+                        <h3>이용권 금액 안내</h3>
+                        <table>
+                            <caption class="blind">이용권 안내</caption>
+                            <tr>
+                                <th>이용권</th>
+                                <th>이용 시간</th>
+                                <th>이용 기간</th>
+                                <th>이용 인원</th>
+                            </tr>
+                            <tr>
+                                <th>일일권</th>
+                                <td>1시간, 2시간</td>
+                                <td>1일</td>
+                                <td>1명</td>
+                            </tr>
+                            <tr>
+                                <th>정기권</th>
+                                <td>1시간, 2시간</td>
+                                <td>7일, 30일, 180일, 365일</td>
+                                <td>1명</td>
+                            </tr>
+                            <tr>
+                                <th>단체권</th>
+                                <td>1시간</td>
+                                <td>1일</td>
+                                <td>2명, 3명, 4명, 4명</td>
+                            </tr>
+                            <tr>
+                                <th>선물권</th>
+                                <td>1시간, 2시간</td>
+                                <td>7일, 30일, 180일, 365일</td>
+                                <td>1명</td>
+                            </tr>
+                        </table>  
+                    </div>
+</li>
+                <li id="pay-area">
+                    <div class="tabs-inner">
+                       <h3>미납요금 결제</h3>
+                       <table class="certi-table">
+                            <tr>
+                                <th>인증 수단</th>
+                                <td><input type="radio" name="phone" value="phonenumber">휴대전화</td>
+                            </tr>
+                            <tr>
+                                <th>휴대전화번호</th>
+                                <td><input type="text" class="phone_num" maxlength="13"><button class="time-btn">인증번호 발송</button></td>
+                            </tr>
+                            <tr>
+                                <th>인증번호</th>
+                                <td><input type="text" maxlength="4" class="certi-num"><span class="time"></span></td>
+                            </tr>
+                       </table>
+                       <button class="done-btn">조회</button>
+                    </div>
+</li>
+                <li id="rental-number">
+                    <div class="tabs-inner">
+                        <h3>대여번호 조회하기</h3>
+                        <table class="certi-table">
+                            <tr>
+                                <th>휴대전화번호</th>
+                                <td><input type="text" class="phone_num" maxlength="13"><button class="time-btn">인증번호 발송</button></td>
+                            </tr>
+                            <tr>
+                                <th>인증번호</th>
+                                <td><input type="text" maxlength="4" class="certi-num"><span class="time"></span></td>
+                            </tr>
+                       </table>
+                       <button class="done-btn">조회</button>  
+                    </div>  
+</li>
+            </ul>
+            <div id="tabs-main">
+                <h3><img src="img/ico_war.png" alt=""><strong>주의사항</strong> - 이용권 구매 전 반드시 확인하세요.</h3>
+                    <ul class="cont">
+                        <li>
+                            <p>이용 전 브레이크, 체인, 안장조임, 타이어 확인, 이용 시 교통법규 준수, 헬멧 등 안전장구 착용</p>
+                        </li>
+                        <li>
+                            <p>대여번호는 "대여번호 조회"( <a href="#" class="libtn1">바로가기</a> )를 통해 다시 확인가능</p>
+                        </li>
+                        <li>
+                            <p>이용권은 비회원만 구매가능하며, 1인 1매만 구매가능(회원 가입시 단체권 구매가능)</p>
+                        </li>
+                        <li>
+                            <p>이용권 미사용 시 구매 후 24시간이 경과되면 자동 결제취소 ※자동 결제취소가 안된 경우 계좌를 통해 환불(운영센터 1599-0120에서 별도 연락)</p>
+                        </li>
+                        <li>
+                            <p>대여후 1시간(2시간 요금제는 2시간)이 경과되면 5분당 200원의 추가요금 부과 ※재대시에는 추가요금이 발생하지 않으므로 1시간 또는 2시간이내에 반납하고 재대여하여 이용(추가요금 발생시 이용권 구매 결제수단으로 자동 결제됨)</p>
+                        </li>
+                        <li>
+                            <p>추가요금이 미결제된 경우 재대여가 불가하므로 미납요금 납부 후 이용 ※미납요금은 "미납요금 확인" 페이지에서 조회가능( <a href="#" class="libtn2" >바로가기</a> )</p>
+                        </li>
+                        <li>
+                            <p>비회원의 경우 하나의 카드로, 한개의 이용권만 구매 가능합니다. 자세한 사항은 <span>FAQ의 이용방법</span>을 통해서 확인하시기 바랍니다.</p>
+                        </li>
+                    </ul>
+                <a href="#" class="btn">이용권 구매하기</a>              
+            </div>               
+        </div>
+    </main>
+    <footer>
+        <div class="inner">
+            <ul>
+                <li><a href="javascript:;">이용약관</a></li>
+                <li><a href="javascript:;">개인정보 처리방침</a></li>
+                <li><a href="javascript:;">보험안내</a></li>
+                <li><a href="javascript:;">도움주신 분</a></li>
+            </ul>
+            <address><span>서울 특별시 중구 세종대로 110 서울특별시 대표자 오세훈</span><span>Tel : 1234-5678 (사업자등록번호: 111-22-33333) 우편번호: 98765</span></address>
+            <div class="sns">
+                <a href="javascript:;"><img src="img/facebook.png" alt="페이스북"></a>
+                <a href="javascript:;"><img src="img/instagram.png" alt="인스타그램"></a>
+                <a href="javascript:;"><img src="img/blog.png" alt="네이버블로그"></a>
+            </div>
+            <p class="copy">COPYRIGHT @ 2021 bikeseoul ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+   </div>
+</body>
+</html>

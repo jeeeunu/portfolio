@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+/*common*/
+html {font-size: 10px}
+body {font: 500 1.6rem 'IBM Plex Sans KR', sans-serif; color: #fff;letter-spacing: -0.75px}
+.inner {width: 1150px;height: 100%;margin: 0 auto;padding: 1.5% 0;box-sizing: border-box;}
+h2 {margin: 50px 0;font-size: 66px;font-family: 'Rubik';font-weight: 700;text-align: center;letter-spacing: 1px}
+h3 {font-size: 2.8rem;}
+.hide {display: none}
+
+
+/*main-page*/
+#main-page {position: relative;max-width: 100%;height: 100vh;background-color: #151515;/*background: url(../img/main.png) no-repeat center/cover*/}
+#main-page .home {position: fixed;width: 35px;height: 33px;top: 5%;left: 3%;background: url(../img/home-w.png) no-repeat center/contain;z-index: 10}
+#main-page .home:hover {background-image: url(../img/home-o.png)}
+#main-page .home > img {width: 100%;height: 100%}
+#main-page .main-menu {position: fixed;width: 13%;top: 15%;right: 0;z-index: 10}
+#main-page .main-menu li {text-align: right;border-bottom: 2px solid rgba(255,255,255,0.8)}
+#main-page .main-menu li > a {display: block;position: relative;padding: 0.9em 1.5em;box-sizing: border-box;height: 100%;font-size: 2rem;font-weight: 600;font-family: 'Rubik';letter-spacing: 1.5px;transition: all 1s;}
+/*#main-page .main-menu li > a:after {content: '';position: absolute;top: -7%;right: -200%;width: 70px;height: 70px;background: url(../img/star1.png) no-repeat center/cover;opacity: 0;transition: all 0.3s}*/
+#main-page .main-menu li > a:hover {text-shadow: 0 0 .2em, 0 0 .4em;}
+/*#main-page .main-menu li > a:hover:after {right: -3%;opacity: 1}*/
+#main-page .main-text {position: absolute;top: 32%;left: 10%}
+#main-page .main-text h1 {margin-bottom: 0.7em;font-size: 4.6rem;font-weight: 600;line-height: 1.6}
+#main-page .main-text h1 > span {color: #ffa512}
+#main-page .main-text p {display: block;font-size: 1.75rem;font-weight: 400;line-height: 1.2;opacity: .85;}
+#main-page .main-text p > span {display: block;margin-left: 3%}
+#main-page .main-text p:before {content: '\f069';margin-right: 6px;font-family: 'Font Awesome 5 Free';font-size: 1.2rem;vertical-align: middle;font-weight: 600;color: #fff;}
+#main-page .scroll {position: absolute;width: 40px;height: 55px;bottom: 7%;left: 50%;transform: translateX(-50%);background: url(../img/scroll.png) no-repeat center/cover;animation: up-down 1s infinite ease-in-out alternate;transition: all 0.2s}
+#main-page .scroll:hover {background-image: url(../img/scroll-w.png)}
+@keyframes up-down{
+  from{
+    transform: translatey(0px);
+  }
+  to{
+    transform: translatey(-20px);
+  }
+}
+
+/*about-me*/
+#about-page {height: 1000px;padding-bottom: 80px;box-sizing: border-box;background-color: #252525;}
+#about-page .inner {height: 100%}
+#about-page .inner h2 > span {display: block;font-family: 'IBM Plex Sans KR';font-size: 1.8rem;font-weight: 300;line-height: 1.3;opacity: .8}
+#about-page .inner .text-box {height: auto;background: url(../img/bg2.png) no-repeat center/cover;border-radius: 20px;padding: 50px 60px;box-sizing: border-box;margin-bottom: 100px;}
+#about-page .inner p {font-size: 2rem;font-weight: 600;line-height: 2.2;color: #222;word-break: keep-all}
+#about-page .inner ul p {font-size: 2.1rem;font-weight: 500;color: #fff;line-height: 2}
+#about-page .inner b {display: block;margin-bottom: 20px;font-size: 2.8rem;font-weight: 800;color: #111;color: #ffa512}
+#about-page .inner i {margin-right: 10px;}
+
+/*pf-page*/
+#pf-page {height: 1080px;background-color: #353535;}
+#pf-page h2 {margin-bottom: 130px;}
+#pf-page .pf-list {position: relative;margin-top: 150px}
+#pf-page .pf-list > li {float: left;position: relative;width: calc(100%/3 - 50px);margin: 0 25px;height: 520px;word-break: keep-all}
+#pf-page .pf-list > li:last-child {margin-right: 0}
+#pf-page .pf-list > li .list-box {height: 100%;background-color: #fff;color: #222;cursor: pointer;border-radius: 30px;}
+#pf-page .pf-list > li h3 {display: inline-block;position: absolute;top: -70px;left: 50%;transform: translateX(-50%);border-bottom: 3px solid #fff;font-size: 2.8rem;font-weight: 600;color: #fff}
+#pf-page .pf-list > li:hover h3 {color: #e89c21;border-bottom-color: #e89c21}
+#pf-page .pf-list > li figure {width: 100%;height: 44%;padding: 20px 10px;box-sizing: border-box;}
+#pf-page .pf-list > li figure:after {content: '';display: block;width: 85%;height: 1px;margin: 0 auto;border-bottom: 1px solid #ebebeb}
+#pf-page .pf-list > li figure > img {width: 100%;height: 100%}
+#pf-page .pf-list > li .text-list {margin: 10px 0;padding: 0 2em;box-sizing: border-box;}
+#pf-page .pf-list > li .text-list li {position: relative;padding-left: 10px;box-sizing: border-box;margin-bottom: 5px;font: 400 1.6rem 'Noto Sans KR', sans-serif;color: #454545}
+#pf-page .pf-list > li .text-list li:before {content: '';position: absolute;left: 0;top: 50%;transform: translateY(-50%);width: 4px;height: 1.5px;background: url(../img/listp.png) no-repeat center/cover}
+#pf-page .pf-list > li .text-list li.two:before {top: 25%}
+#pf-page .pf-list > li .text-list li.b-text {margin-bottom: 20px;font-size: 1.7rem;font-weight: 600;color: #333;border-left: 3px solid #ffa512;word-break: keep-all}
+#pf-page .pf-list > li .text-list li.b-text:before {display: none}
+#pf-page .pf-list > li .text {position: absolute;right: 5%;bottom: 2%;font-size: 1.45rem;text-align: right;word-break: keep-all;color: #555}
+#pf-page .pf-list > li .text > span {margin-left: 5px;font-weight: 700;font-size: 1.55rem;color: #333}
+#pf-page .pf-list > li .text > i {margin-right: 5px;font-size: 1rem}
+#pf-page .pf-list > li .category {position: absolute;bottom: -28px;right: 5%;font: 300 1.6rem 'Rubik', sans-serif;color: #e5e5e5}
+#pf-page .pf-list > li .category .time {margin-left: 10px;font-size: 1.8rem;font-weight: 600;letter-spacing: 0.5px;color: #fff}
+#pf-page .pf-list > li .btn-area {position: absolute;width: 100%;height: 100%;top: 0;background-color: rgba(0,0,0,.55);border-radius: 30px;opacity: 0;transition: all 1s}
+#pf-page .pf-list > li .btn-area .btn-list {position: absolute;width: 100%;;top: 50%;left: 50%;transform: translate(-50%,-50%);overflow: hidden}
+#pf-page .pf-list > li:hover .btn-area {opacity: 1;}
+#pf-page .pf-list > li .btn-area .btn-list > a {float: left;width: calc(100%/2 - 7px);height: 38px;margin: 3px 0px 3px 5px;font: 400 1.5rem 'Rubik', sans-serif;text-align: center;color: #fff;line-height: 2.6;letter-spacing: 0.5px;background-color: #292929;transition: all .3s;}
+#pf-page .pf-list > li .btn-area .btn-list > a:hover {color: #e89c21}
+
+/*graphics-page*/
+#graphics-page {height: 1080px;background-color: #454545;}
+#graphics-page ul {}
+#graphics-page ul li {position: relative;float: left;position: relative;width: calc(100%/3 - 30px);height: 270px;margin: 20px 15px;padding: 20px 10px;box-sizing: border-box;background-color: #fff;border: 3.5px solid #fff;border-radius: 30px;text-align: center;box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.05);transition: all 0.4s;overflow:hidden }
+#graphics-page ul li h3 {display: inline-block;padding: 6px 40px;margin-bottom: 18px;font-size: 1.5rem;font-weight: 600;color: #fff;background-color: rgba(153, 153, 153, 0.9);border-radius: 30px;transition: all 0.5s}
+#graphics-page ul li h4 {position: absolute;width: 100%;top: 12%;left: 50%;;transform: translateX(-50%);font-size: 1.7rem;font-weight: 600;color: #444;opacity: 0;transition: all 0.9s}
+#graphics-page ul li:hover {border: 3.5px solid #e89c21}
+#graphics-page ul li:hover h3 {opacity: 0}
+#graphics-page ul li:hover h4 {opacity: 1}
+#graphics-page ul li:hover figure > img {transform: scale(1.2)}
+#graphics-page ul li > a {display: block;width: 100%;height: 100%}
+#graphics-page ul li:nth-child(3n) {margin-right: 0}
+#graphics-page ul li:nth-child(1) h3 {background-color: #01ab52}
+#graphics-page ul li:nth-child(2) h3 {background-color: #222}
+#graphics-page ul li:nth-child(3) h3 {background-color: #505786}
+#graphics-page ul li p {padding: 15px 0;box-sizing: border-box;font-size: 1.5rem;color: #333;}
+#graphics-page ul li figure {border-top: 1px solid #cccccc;padding-top: 20px;margin-top: 10px;width: 90%;height: auto;margin: 0 auto;}
+#graphics-page ul li figure > img {width: 100%;height: 100%;transition: all 0.4s}
+
+/*modal-area*/
+#modal-area {position: fixed;width: 80%;height: 95%;top: 50%;left: 50%;transform: translate(-50%,-50%);background-color: #111;}
+#modal-area .modal-btn-cont {position: relative;width: 100%;height: 45px;}
+#modal-area .modal-btn-cont h2 {display: inline-block;margin-top: 12px;margin-left: 30px;font-weight: 400;font-size: 1.5rem;font-family: 'IBM Plex Sans KR';text-align: left;color: #fff}
+#modal-area .modal-btn-cont .btn-close {position: absolute;top: 50%;transform: translateY(-50%);right: 10px;font-size: 3rem;}
+#modal-area > div + div {position: absolute;width: 100%;height: 95%;padding: 50px 80px;bottom: 0;overflow-y: scroll;box-sizing: border-box;background-color: #fff}
+#modal-area > div + div > h3 {margin-bottom: 30px;font-size: 3.6rem;font-weight: 700;color: #222;line-height: 1.3}
+#modal-area > div + div > h3 > span {font-style: italic;font-size: 3rem;color: #222}
+#modal-area > div + div > h4 {display: block;padding-top: 50px;font-size: 1.6rem;font-weight: 600;color: #555;text-align: center}
+#modal-area > div + div > dl {margin-bottom: 40px;padding: 18px;box-sizing: border-box;color: #222;border-top: 1px solid #999;border-bottom: 1px solid #999}
+#modal-area > div + div > dl dt {display: inline-block;padding-right: 2px;margin-bottom: 7px;font-weight: 600;font-size: 2rem;color: #333}
+#modal-area > div + div > dl dt:before {content: '';display: inline-block;margin-right: 3px;width: 3px;height: 15px;background-color: #333}
+#modal-area > div + div > dl dt i {font-size: 1.5rem;color: #454545;margin-right: 5px;}
+#modal-area > div + div > dl dd {margin-bottom: 20px;font-size: 1.6rem;color: #444}
+#modal-area > div + div > dl dd:last-child {margin-bottom: 0}
+#modal-area > div + div > figure {width: 95%;height: auto;margin: 0 auto;margin-bottom: 150px;border: 1px solid #d9d9d9}
+#modal-area > div + div > figure.mobile {width: 30%;height: auto;margin: 0 auto}
+#modal-area > div + div > figure.mobile-two {width: 65%;height: auto;margin: 0 auto}
+#modal-area > div + div > figure > img {width: 100%;height: 100%}
+#modal-area > div + div > .download {margin-right: 10px;padding: 10px 60px;border-radius: 5px;background-color: #333;border: 1.5px solid transparent;transition: all 0.4s}
+#modal-area > div + div > .download:hover {background-color: #fff;color: #333;border-color: #333}
+
+#modal-area .seoul-bike h3 {color: #01ab52}
+#modal-area .grim h3 {color: #505786}
+
+/*contact-page*/
+#contact-page {height: 980px;background-color: #999;box-sizing: border-box}
+#contact-page a {display: block;width: 200px;margin: 30px auto;padding: 10px 60px;border-radius: 5px;background-color: #fff;color: #333;text-align: center;transition: all 0.4s;letter-spacing: 1px}
+#contact-page a > i {margin-left: 5px}
+#contact-page a:hover {background-color: #ffa512;color: #fff}
+#contact-page b {display: block;margin-top: 9%;font-size: 4.6rem;font-weight: 600;color: #fff;text-align: center}
+#contact-page dl {width: 30%;margin: 50px auto;text-align: center}
+#contact-page dl dt {width: 110px;margin: 0 auto;font-weight: 700;font-size: 2.2rem;color: #fff;border-bottom: 3px solid #ffa512;letter-spacing: 5px}
+#contact-page dl dd {margin-top: 5px;margin-bottom: 10px;font-size: 1.8rem;opacity: 0.95;letter-spacing: 0}
+
+/*footer*/
+footer {height: 30px;background-color: #999;box-sizing: border-box}
+footer p {margin-right: 10px;font-size: 1.3rem;color: #fff;text-align: right}

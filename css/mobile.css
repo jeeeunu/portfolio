@@ -1,0 +1,104 @@
+@media screen and (min-width: 1491px) and (max-width: 1600px) {
+    html {font-size: 9px}
+    #pf-page {height: 1000px}
+    #graphics-page {height: 1000px}
+    #main-page .main-menu {width: 10%}
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1490px) {
+    html {font-size: 9px}
+    .inner {width: 850px;height: 100%}
+    #about-page {height: 950px}
+    #pf-page {height: 1700px}
+    #pf-page .pf-list > li {width: calc(100%/2 - 50px);}
+    #pf-page .pf-list > li:last-child {margin-top: 150px}
+    #pf-page .pf-list > li h3 {top: -50px}
+    #graphics-page {height: 1200px}
+    #main-page .main-menu {width: 13%}
+    #graphics-page ul li:nth-child(3n) {margin: 20px 15px;}
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    html {font-size: 9px}
+    .inner {width: 730px;height: 100%}
+    h2 {margin: 30px 0}
+    #about-page {height: 900px}
+    #main-page .main-menu {width: 14%}
+    #main-page .main-menu li > a {font-size: 1.5rem}
+    #pf-page {height: 1600px}
+    #pf-page .pf-list > li {width: calc(100%/2 - 50px);}
+    #pf-page .pf-list > li:last-child {margin-top: 150px}
+    #modal-area > div + div > .download {display: block;width: 30%;margin-bottom: 8px}
+}
+@media screen and (min-width: 651px) and (max-width: 800px) {
+    html {font-size: 9px}
+    .inner {width: 500px;height: 100%}
+    h2 {margin: 30px 0;font-size: 45px}
+    #about-page {height: 900px}
+    #main-page .main-menu {width: 14%;}
+    #main-page .main-menu li > a {font-size: 1.5rem;padding: 15px 0}
+    #main-page .main-text {left: 0;padding: 0 50px;box-sizing: border-box}
+    #main-page .main-text h1 {font-size: 3rem}
+    #pf-page {height: 2200px}
+    #pf-page .pf-list > li {float: none;width: 350px;margin: 0 auto}
+    #pf-page .pf-list > li + li {margin-top: 120px}
+    #pf-page .pf-list > li:last-child {margin: 120px auto;margin-bottom: 0}
+    #graphics-page {height: 980px}
+    #graphics-page ul li {width: calc(100%/2 - 30px);height: 230px}
+    #graphics-page ul li:nth-child(3n) {margin: 20px 15px}
+    #modal-area > div + div > .download {display: block;width: 30%;margin-bottom: 8px}
+    #contact-page {height: 800px;}
+    
+}
+
+@media screen and (min-width: 451px) and (max-width: 650px) {
+    html {font-size: 9px}
+    #wrap {overflow: hidden}
+    .inner {width: 450px;height: 100%}
+    h2 {margin: 30px 0;font-size: 45px}
+    .home {display: none}
+    #about-page {height: 900px}
+    #about-page .inner .text-box {margin-bottom: 70px}
+    #main-page .main-menu {display: none;}
+    #main-page .main-text {left: 0;padding: 0 50px;box-sizing: border-box}
+    #main-page .main-text h1 {font-size: 3rem}
+    #pf-page {height: 2200px}
+    #pf-page .pf-list > li {float: none;width: 350px;margin: 0 auto}
+    #pf-page .pf-list > li + li {margin-top: 120px}
+    #pf-page .pf-list > li:last-child {margin: 120px auto;margin-bottom: 0}
+    #graphics-page {height: 980px}
+    #graphics-page ul li {width: calc(100%/2 - 30px);height: 230px}
+    #graphics-page ul li:nth-child(3n) {margin: 20px 15px}
+    #modal-area {width: 100%}
+    #modal-area > div + div {padding: 30px 10px}
+    #modal-area > div + div > h3 {font-size: 2rem}
+    #modal-area > div + div > .download {display: block;width: 60%;margin: 8px auto;text-align: center}
+    #contact-page {height: 800px;}
+}
+@media screen and (max-width: 450px) {
+    html {font-size: 9px}
+    #wrap {overflow: hidden}
+    .inner {width: 93%;height: 100%}
+    h2 {margin: 30px 0;font-size: 40px}
+    .home {display: none}
+    #main-page .main-menu {display: none;}
+    #main-page .main-text {left: 0;padding: 0 50px;box-sizing: border-box}
+    #main-page .main-text h1 {font-size: 3rem}
+    #about-page {height: 1000px}
+    #about-page .inner .text-box {margin-bottom: 70px;padding: 15px 10px;font-size: 1.7rem}
+    #pf-page {height: 2200px}
+    #pf-page .pf-list > li {float: none;width: 350px;margin: 0 auto}
+    #pf-page .pf-list > li + li {margin-top: 120px}
+    #pf-page .pf-list > li:last-child {margin: 120px auto;margin-bottom: 0}
+    #pf-page .pf-list > li h3 {top: -50px}
+    #graphics-page {height: 1800px}
+    #graphics-page ul li {width: 90%;height: 230px}
+    #graphics-page ul li:nth-child(3n) {margin: 20px 15px}
+    #modal-area {width: 100%}
+    #modal-area > div + div {padding: 30px 10px}
+    #modal-area > div + div > h3 {font-size: 2rem}
+    #modal-area > div + div > .download {display: block;width: 60%;margin: 8px auto;text-align: center}
+    #contact-page {height: 700px;}
+    #contact-page b {font-size: 3rem}
+    #contact-page dl {width: 70%}
+}
