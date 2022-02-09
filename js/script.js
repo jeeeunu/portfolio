@@ -13,6 +13,11 @@ $(function() {
     });
     
     //메인페이지 메뉴 버튼 클릭시 해당 섹션으로 이동
+    $('.home').click(function() {
+        $('html,body').animate({
+        scrollTop: $('#main-page').offset().top},
+        'slow');
+        });
     $('.pf-btn').click(function() {
     $('html,body').animate({
     scrollTop: $('#pf-page').offset().top},

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>유지은ㅣ웹 퍼블리셔 포트폴리오</title>
     <meta name="viewport" content="width=device-width, initial-scalce=1.0">
-    <link rel="icon" type="image/png" sizes="512x512"  href="img/ico_aboutme.png">
+    <link rel="icon" type="image/png" sizes="512x512"  href="img/android-icon-192x192.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -21,7 +21,7 @@
 <body>
     <div id="wrap">
         <div id="main-page">
-            <a href="index.html" class="home blind">홈으로 이동</a>
+            <a href="#" class="home blind">홈으로 이동</a>
             <ul class="main-menu">
                 <li><a href="#" class="about-btn">ABOUT ME</a></li>
                 <li><a href="#" class="pf-btn">WEB PUBLISHING</a></li>           
@@ -37,7 +37,7 @@
         <div id="about-page">
             <div class="inner">
                 <h2 data-aos="fade-down">ABOUT ME</h2>
-                <p class="text-box" data-aos="fade-down" data-aos-duration="1000"> 1px, 2px 작은 차이가 좋은 퀄리티를 좌우한다고 생각합니다.<br> 같은 디자인이여도 마감의 퀄리티에 따라 상품의 가치가 달라집니다. 이는 온라인도 마찬가지라고 생각합니다.<br>저에게 온라인의 첫인상인 웹 페이지를 디자인,구현하는 역할이 주어진다면 작은 차이로 높은 퀄리티를 결정한다는것을 잊지않고 관찰을 요하는 섬세한 작업들을 하고싶습니다.</p>
+                <p class="text-box" data-aos="fade-down" data-aos-duration="1000"> 작은 차이가 좋은 퀄리티를 좌우한다고 생각합니다.<br> 같은 디자인이여도 마감의 퀄리티에 따라 상품의 가치가 달라집니다. 이는 온라인도 마찬가지라고 생각합니다.<br>저에게 온라인의 첫인상인 웹 페이지를 디자인,구현하는 역할이 주어진다면 작은 차이로 높은 퀄리티를 결정한다는것을 잊지않고 관찰을 요하는 섬세한 작업들을 하고싶습니다.</p>
                 <b data-aos="fade-right" data-aos-duration="1000"><i class="fas fa-check"></i>저는 이런 강점을 가지고 있습니다.</b>
                 <ul data-aos="fade-right" data-aos-duration="1500">
                     <li><p>- 유연한 사고를 가지고 있어 커뮤니케이션에 능합니다.</p></li>
@@ -56,19 +56,23 @@
                         <div class="list-box">
                             <figure><img src="img/seoulbike.png" alt=""></figure>
                             <ul class="text-list">
-                                <li class="b-text two">홈페이지 리뉴얼 기획,디자인 및 퍼블리싱</li>
+                                <li class="b-text two">웹/모바일 리뉴얼 기획,디자인 및 퍼블리싱</li>
                                 <li>로그인 양식 구현</li>
                                 <li>스크롤시 카운트업 동작 구현</li>
-                                <li>탭메뉴 구현 (서브페이지)</li>
+                                <li>탭메뉴 구현 (Sub Page1)</li>
                                 <li class="two">인증번호 발송 시 인증번호 카운트 동작 실행 구현 (Sub Page1)</li>
                             </ul>
-                            <p class="text"><i class="fas fa-asterisk"></i>퍼블리싱 작업기간: <span>7일</span><br><i class="fas fa-asterisk"></i>기획, 디자인, 퍼블리싱참여도: <span>100%</span></p>
                             <div class="btn-area">
+                                <ul class="work-info">
+                                    <li>* 퍼블리싱 작업기간: <span>7일</span></li>
+                                    <li>* 기획/디자인/퍼블리싱 참여도: <span>100%</span></li>
+                                </ul>
                                 <div class="btn-list">
                                     <a href="sub/seoulbike/index.html" target="_blank">Web Site</a>
                                     <a href="sub/seoulbike/sub1.html" target="_blank">Sub Page1</a>
                                     <a href="sub/seoulbike/index.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=480,height=700,scrollbars=yes,resizable=yes'); return false;">Mobile Size</a>
                                     <a href="sub/seoulbike/ppt.pdf" target="_blank">기획 PPT</a>
+                                    <a href="https://github.com/jeeeunu/portfolio/tree/master/sub/seoulbike" target="_blank">Git Hub <i class="fab fa-github"></i></a>                                    
                                 </div>
                             </div>
                         </div>
@@ -80,17 +84,20 @@
                             <figure><img src="img/kai.JPG" alt=""></figure>
                             <ul class="text-list">
                                 <li class="b-text">반응형 웹 클론코딩</li>
-                                <li class="two">디바이스별 분기점: 1680px / 1330px / 1100px / 700px</li>
-                                <li class="two">스와이퍼 실행버튼 디자인 변경,슬라이더 재생및 일시정지 버튼 생성</li>
-                                <li>헤더 변수, if문을 활용해 고정헤더 구현.</li>
+                                <li class="two">반응형웹 디바이스별 분기점 4개</li>
+                                <li class="two">스와이퍼 실행버튼 디자인 변경, 슬라이더 재생및 일시정지 버튼 생성</li>
+                                <li>헤더 변수, if문을 활용해 고정헤더 구현</li>
                             </ul>
-                            <p class="text"><i class="fas fa-asterisk"></i>퍼블리싱 작업기간: <span>10일</span><br><i class="fas fa-asterisk"></i>퍼블리싱 참여도: <span>100%</span></p>
                             <div class="btn-area">
+                                <ul class="work-info">
+                                    <li>* 퍼블리싱 작업기간: <span>10일</span></li>
+                                    <li>* 퍼블리싱 참여도: <span>100%</span></li>
+                                </ul>
                                 <div class="btn-list">
                                     <a href="sub/kai/index.html" target="_blank">Web Site</a>
                                     <a href="sub/kai/sub1.html" target="_blank">Sub Page1</a>
                                     <a href="sub/kai/index.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=480,height=700,scrollbars=yes,resizable=yes'); return false;">Mobile Size</a>
-                                    <a href="#" target="_blank">-</a>
+                                    <a href="https://github.com/jeeeunu/portfolio/tree/master/sub/kai" target="_blank">Git Hub <i class="fab fa-github"></i></a>  
                                 </div>
                             </div>
                         </div>
@@ -101,21 +108,26 @@
                         <div class="list-box">
                             <figure><img src="img/grim.png" alt=""></figure>
                             <ul class="text-list">
-                                <li class="two b-text">기획,디자인,퍼블리싱</li>
+                                <li class="two b-text">모바일 기획,디자인,퍼블리싱</li>
                                 <li>2단 아코디언 메뉴 구현</li>
-                                <li class="two">탭메뉴 스크립트를 활용해 해당 작품 클릭시 해당 설명을 볼 수 있도록 함. (Sub Page1)</li>
+                                <li class="two">탭메뉴 스크립트로 해당 작품 클릭시 해당 설명을 볼 수 있도록 함 (Sub Page1)</li>
                             </ul>
-                            <p class="text"><i class="fas fa-asterisk"></i>퍼블리싱 작업기간: <span>2일</span><br><i class="fas fa-asterisk"></i>기획 참여도: <span>50%</span>/ 디자인,퍼블리싱 참여도: <span>100%</span></p>
                             <div class="btn-area">
+                                <ul class="work-info">
+                                    <li>* 퍼블리싱 작업기간: <span>3일</span></li>
+                                    <li>* 디자인/퍼블리싱 참여도: <span>100%</span></li>
+                                    <li>* 기획 참여도: <span>50%</span></li>
+                                </ul>
                                 <div class="btn-list">
-                                    <a href="sub/grim/index.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=500,height=900,scrollbars=yes,resizable=yes'); return false;">Main Page</a>
-                                    <a href="sub/grim/sub1-1.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=500,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page1</a>
-                                    <a href="sub/grim/sub1-2.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=500,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page2</a>
-                                    <a href="sub/grim/sub1-3.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=500,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page3</a>
-                                    <a href="sub/grim/sub1-4.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=500,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page4</a>
-                                    <a href="sub/grim/sub1-5.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=500,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page5</a>
+                                    <a href="sub/grim/index.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=480,height=900,scrollbars=yes,resizable=yes'); return false;">Main Page</a>
+                                    <a href="sub/grim/sub1-1.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=480,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page1</a>
+                                    <a href="sub/grim/sub1-2.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=480,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page2</a>
+                                    <a href="sub/grim/sub1-3.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=480,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page3</a>
+                                    <a href="sub/grim/sub1-4.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=480,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page4</a>
+                                    <a href="sub/grim/sub1-5.html" onclick="window.open(this.href, 'http://vcxzk.dothome.co.kr/', 'width=480,height=900,scrollbars=yes,resizable=yes'); return false;">Sub Page5</a>
                                     <a href="sub/grim/index.html" target="_blank">기본 web으로 열기</a>
                                     <a href="sub/grim/ppt.pdf" target="_blank">기획 PPT</a>
+                                    <a href="https://github.com/jeeeunu/portfolio/tree/master/sub/grim" target="_blank">Git Hub <i class="fab fa-github"></i></a>  
                                 </div>
                             </div>
                         </div>
@@ -129,21 +141,21 @@
                 <ul class="2d-list">
                     <li data-aos="zoom-in">
                         <a href="#">
-                            <h3>웹 / 앱 디자인</h3>
+                            <h3>웹 / 모바일 디자인</h3>
                             <figure><img src="img/main_seoulbike.png" alt="서울자전거 따릉이 디자인"></figure>
                             <h4>따릉이 리디자인</h4>
                         </a>
                     </li>
                     <li data-aos="zoom-in" data-aos-duration="2000">
                         <a href="#">
-                            <h3>웹 / 앱 디자인</h3>
+                            <h3>웹 / 모바일 디자인</h3>
                             <figure><img src="img/main_jeep.png" alt="JEEP 디자인"></figure>
                             <h4>JEEP 리디자인</h4>
                         </a>
                     </li>
                     <li data-aos="zoom-in" data-aos-duration="2500">
                         <a href="#">
-                            <h3>앱 디자인</h3>
+                            <h3>모바일 어플 디자인</h3>
                             <figure><img src="img/grim.png" alt="그림대여 서비스 GRIM"></figure>
                             <h4>그림대여 서비스 GRIM 기획 및 디자인</h4>
                         </a>
@@ -183,7 +195,7 @@
                     <dt>참여도</dt>
                     <dd>기획 / 디자인 : 100%</dd>
                     <dt>기획 의도</dt>
-                    <dd>모바일 APP이 주 서비스임을 강조. / 공공대여서비스임을 고려하여 제공되는 서비스를 직관적으로 알 수 있도록 최대한 문구와 이미지가 최대한 강조될 수 있도록 디자인.</dd>
+                    <dd>모바일 APP이 주 서비스임을 강조 / 공공대여서비스임을 고려하여 제공되는 서비스를 직관적으로 알 수 있도록 문구와 이미지가 최대한 강조될 수 있도록 디자인</dd>
                 </dl>
                 <a href="sub/seoulbike/ppt.pdf" target="_blank" class="download">기획 PPT</a>
                 <a href="img/modal_seoulbike1.png" target="_blank" class="download">웹 디자인 자세히 보기</a>
@@ -199,7 +211,7 @@
                     <dt>참여도</dt>
                     <dd>기획 / 디자인 : 100%</dd>
                     <dt>기획 의도</dt>
-                    <dd>기존 JEEP 홈페이지 리디자인, 기존 JEEP의 마초적인 아메리칸 이미지뿐만 아니라 유로피안 도시 SUV의 이미지도 함계 표현하고자 함.</dd>
+                    <dd>기존 JEEP 홈페이지 리디자인, 마초적인 아메리칸 이미지뿐만 아니라 유로피안 도시 SUV의 이미지도 함계 표현하고자 함</dd>
                 </dl>
                 <a href="sub/ppt_jeep.pdf" target="_blank" class="download">기획 PPT</a>
                 <a href="img/modal_jeep1.png" target="_blank" class="download">웹 디자인 자세히 보기</a>
@@ -264,7 +276,8 @@
                 <h2>CONTACT ME</h2>
                 <div class="main-text">
                     <b>감사합니다!</b>
-                    <a href="#">이력서/자기소개서<i class="fas fa-download"></i></a>
+                    <a href="https://github.com/jeeeunu/portfolio" target="_blank">깃 허브 바로가기 <i class="fab fa-github"></i></a>
+                    <a href="https://vc-xz.tistory.com/" target="_blank">티스토리 바로가기</a>
                     <dl>
                         <dt>이름</dt>
                         <dd>유지은</dd>
