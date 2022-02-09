@@ -132,5 +132,10 @@ $(function() {
         })
     });
 
+    //a 태그 클릭 방지
+    $(document).on('click', 'a[href="#"]', function(e) {
+      e.preventDefault();
+    });
+
     
 });
