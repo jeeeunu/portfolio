@@ -1,7 +1,7 @@
 $(function() {
      AOS.init();
     
-    //# 클릭방지 스크립트
+    //a태그 클릭방지 스크립트
     $(document).on('click', 'a[href="#"]', function(e) {
         e.preventDefault();
     });
