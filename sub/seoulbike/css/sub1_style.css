@@ -171,13 +171,13 @@ footer .sns > a {padding-right: 15px;}
     body {width: 100vw;letter-spacing: 0.1px;}
     .inner {width: 98vw}
     h3 {padding-bottom: 10px}
-    #wrap {overflow: hidden}
+    #wrap {overflow: hidden;overflow-y: scroll}
     #chat {display: none}
     
     /*header/nav*/
     header {}
     header .top-head {display: none;}
-    header .main-head {height: 65px;background-color: #fff}
+    header .main-head {position: fixed;height: 65px;background-color: #fff}
     header .main-head .mobile-head {display: block}
     header .main-head h1 {width: 75px;height: 42px;left: 50%;top: 23%;transform: translateX(-50%);background: url(../img/loglo_mobile.png) no-repeat}
     header .main-head h1 > a {}
@@ -189,14 +189,14 @@ footer .sns > a {padding-right: 15px;}
     header .main-head nav .gnb li > a {height: 80px;font-size: 1.85rem;border-bottom: 1px solid #e8e8e8;line-height: 4.8}
     header .main-head nav .sub-area {opacity: 0}
     .main-head nav .mb-btn-close {display: none;font-size: 3rem;padding: 15px}
-    .main-head .mobile-head .mb-btn-menu {position: absolute;left: 4%;bottom: 11%;font-size: 3.1rem;}
+    .main-head .mobile-head .mb-btn-menu {position: absolute;left: 4%;bottom: 16%;font-size: 3.1rem;}
     .main-head .mobile-head .mb-box {position: absolute;overflow: hidden;text-align: center;right: 2%;bottom: 11%;}
     .main-head .mobile-head .mb-box > a {display: block;float: left;margin-right: 10px;font-size: 2.4rem}
     .main-head .mobile-head .mb-box > a > i {font-size: 2.9rem}
     .main-head .mobile-head .mb-box a > span {display: block;margin-top: -8px;font-size: 1.25rem}
     
     /*tabs*/
-    #tabs {margin-top: 20px}
+    #tabs {margin-top: 40px}
     #tabs > a {min-height: 110px;border: 1px solid #fff}
     #tabs > a:before {width: 35px;height: 35px}
     

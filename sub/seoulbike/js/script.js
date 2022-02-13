@@ -6,9 +6,6 @@ $(function() {
     $('.sub-area').mouseleave(function() {
         $(this).slideUp(500);
     });
-    /*$('.top-head').mouseover(function() {
-        $('.sub-area').slideUp(300);
-    });*/
     
     //메인 사진/텍스트 내려오기
     $('.main-bg').delay(100).animate({
@@ -24,9 +21,9 @@ $(function() {
     //h2 나타내기
         $(window).scroll(function(){
         $("h2").each(function(){
-            
             var bottom_of_element = $(this).offset().top + $(this).outerHeight(); //h2의 탑위치 + h2의 height 값
             var bottom_of_window = $(window).scrollTop() + $(window).height(); //윈도우 스크롤바 수직위치 +  윈도우 높이값
+
             if( bottom_of_window > bottom_of_element ){
                 $(this).animate({'opacity':'1','margin-left':'0px'},2000);
             }            
@@ -40,7 +37,6 @@ $(function() {
     $('.video-cont > a').on('click', function() {
         $('video').get(0).play();
     })
-    
     
     //가이드 포인트 안내 열기/닫기
     $('.desc.point1').click(function() {
@@ -67,12 +63,12 @@ $(function() {
   
     //숫자 카운트
     $(window).scroll(function(){
-    $(".number").each(function(){
+        $(".number").each(function(){
             
-    var count0 = 0;
-    timeCounter();
+        var count0 = 0;
+        timeCounter();
 
-    function timeCounter() {
+        function timeCounter() {
 
         id0 = setInterval(count0Fn, 10);
 
@@ -132,7 +128,10 @@ $(function() {
         $('.mobile-cont .bikeclass > li:first-child > a').css('color','');
         })
     });
-    
+
+    //동영상 재생버튼 삭제
+    $('.video-cont > a').css('display','none');
+
     //티켓 안내창 사라지기
     setTimeout(function() {
     $('.ticket').fadeOut(700)

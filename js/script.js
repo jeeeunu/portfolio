@@ -1,6 +1,5 @@
 $(function() {
      AOS.init();
-    
     //a태그 클릭방지 스크립트
     $(document).on('click', 'a[href="#"]', function(e) {
         e.preventDefault();
@@ -11,7 +10,6 @@ $(function() {
     scrollTop: $('#about-page').offset().top},
     'slow');
     });
-    
     //메인페이지 메뉴 버튼 클릭시 해당 섹션으로 이동
     $('.home').click(function() {
         $('html,body').animate({
@@ -33,7 +31,6 @@ $(function() {
     scrollTop: $('#contact-page').offset().top},
     'slow'); 
     });
-    
     //2dlist btn-close
     $('.btn-close').click(function() {
         $('#modal-area,#modal-area > div + div').addClass('hide')
@@ -47,8 +44,4 @@ $(function() {
         $('#modal-area > div + div').eq(idx).removeClass('hide');
         $('body').css("overflow", "hidden");
     });
-    
-    
-    
-    
 });
