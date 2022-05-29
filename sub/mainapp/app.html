@@ -8,13 +8,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="app.css">
     <style>
-        .cont_section {
+        .hide {
+            display: none;
+        }
+
+        .wrap {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
         }
+
+        h1 {
+            display: none;
+        }
+
+        fieldset {
+            display: flex;
+            border: none;
+        }
+
+        legend {
+            display: none;
+        }
+
+        input {
+            height: 100%;
+        }
+
+        button {
+            width: 50px;
+            height: 22px;
+            margin-left: 5px;
+        }
+
+        .todolist_UL li {
+            margin-bottom: 5px;
+        }
+
     </style>
 </head>
 
@@ -22,13 +54,43 @@
     <!-- 컨텐츠 -->
     <main>
         <div class="wrap">
-            <section class="cont_section">
-                <h1 id="clock">00:00:00</h1>
-                <h1>안녕하세요 <span>유지은</span>님!</h1>
+            <h1>앱만들기</h1>
+            <!-- clock,username -->
+            <section class="section1">
+                <div class="clock_area">
+                    <h2 id="clock">00:00:00</h2>
+                </div>
+                <div class="userName_area">
+                    <form class="userName_form">
+                        <fieldset>
+                            <label for="userName"></label>
+                            <input type="text" id="userName">
+                            <button>확인</button>
+                        </fieldset>
+                    </form>
+                    <div class="userName_on hide">
+                        <p>안녕하세요 <span class="userName_cont">님!</p>
+                    </div>
+                </div>
+            </section>
+            <!-- todo list -->
+            <section class="section2">
+                <h2>to do list</h2>
+                <form class="todolist_form">
+                    <fieldset>
+                        <legend>todolist</legend>
+                        <label for="todolist"></label>
+                        <input type="text" id="todolist">
+                        <button class="btn_add">추가</button>
+                    </fieldset>
+                </form>
+                <ul class="todolist_UL">
+                </ul>
             </section>
         </div>
 
     </main>
+    
     <!-- 푸터 -->
     <footer>
 
