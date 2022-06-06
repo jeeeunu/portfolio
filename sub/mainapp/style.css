@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.hide {
+    display: none;
+}
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    display: none;
+}
+
+fieldset {
+    display: flex;
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+input {
+
+}
+
+button {
+    width: 50px;
+    height: 22px;
+    margin-left: 5px;
+}
+
+.todolist_UL li {
+    margin-bottom: 5px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+    color: #999;
+    text-align: center;
+}

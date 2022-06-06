@@ -111,10 +111,11 @@ function todolistDelete(e) {
     const btn = e.target;
     const li = btn.parentNode;
     todolistUL.removeChild(li);
+    window.localStorage.removeItem(TODOBOX);
 }
 
 // 투두리스트 저장 스토리지 설정
-const TODOBOX = "todolistList";
+const TODOBOX = "todoList";
 
 // 스토리지 저장
 function saveTodoList(text) {
