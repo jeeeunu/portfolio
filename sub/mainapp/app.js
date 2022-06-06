@@ -77,39 +77,71 @@ const todolistForm = document.querySelector(".todolist_form"),
     todolistBtnRemove = document.querySelector(".btn_delete"),
     todolistUL = document.querySelector(".todolist_UL");
 
-//저장소
-const TODO_LS = "currentTODO"
 
-function savetodo(text) {
-    localStorage.setItem(TODO_LS, text);
-};
-
-
+// 투두리스트 작성
 function todolistWrite(e) {
     e.preventDefault();
-    const todolistLI = document.querySelector(".todolist_LI");
     const li = document.createElement("li");
     const btn = document.createElement("button");
     const todolistVal = todolistInput.value;
-
     li.innerText = `${todolistVal}`
+
+    // 값 스토리지에 저장
+    saveTodoList(todolistVal);
+
+    // 버튼
     li.appendChild(btn);
     btn.innerText = `삭제`;
     btn.addEventListener("click", todolistDelete);
-    savetodo(todolistVal);
+
+    // 입력 검사
     if (todolistVal.length === 0) {
         alert("입력해주십셔");
     } else {
+        // li 만들기
         todolistUL.appendChild(li);
+        // input 입력칸 초기화
         todolistInput.value = ``;
     }
 
 }
 
+// 버튼 클릭시삭제
 function todolistDelete(e) {
     const btn = e.target;
     const li = btn.parentNode;
     todolistUL.removeChild(li);
 }
 
+// 투두리스트 저장 스토리지 설정
+const TODOBOX = "todolistList";
+
+// 스토리지 저장
+function saveTodoList(text) {
+    localStorage.setItem(TODOBOX,text);
+}
+
+
+//스토리지 값에 따른 나타내기
+function showTODO () {
+    const TODOBOX_LIST = localStorage.getItem(TODOBOX);
+    const li = document.createElement("li");
+    const btn = document.createElement("button");
+
+    if (TODOBOX_LIST === null) {
+        
+    } else {
+        todolistUL.appendChild(li);
+        li.innerText=`${TODOBOX_LIST}`
+        li.appendChild(btn);
+        btn.innerText = `삭제`;
+        btn.addEventListener("click", todolistDelete);
+    } 
+}
+
+
+// form submit
 todolistForm.addEventListener("submit", todolistWrite);
+
+// 스토리지 값 보이기
+showTODO();
