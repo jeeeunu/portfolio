@@ -14,10 +14,79 @@
     <main>
         <h1>유효성 검사</h1>
         <section>
-            <form action="">
+            <form>
                 <fieldset>
                     <legend>회원가입</legend>
-                    
+                    <div class="id_area">
+                        <label for="id"></label>
+                        <input type="text" id="id">
+                        <button>중복확인</button>
+                    </div>
+                    <div class="pw_area">
+                        <label for="pw">비밀번호</label>
+                        <input type="text" id="pw" placeholder="영문자+숫자+특수문자 조합">
+                    </div>
+                    <div class="pw_check_area">
+                        <label for="pw_check">비밀번호 재확인</label>
+                        <input type="text">
+                    </div>
+                    <div class="name_area">
+                        <label for="name">이름</label>
+                        <input type="text">
+                    </div>
+                    <div class="birth_area">
+                        <div>
+                            <label for="year">생년월일</label>
+                            <input type="text" id="year" placeholder="년(4자)">
+                        </div>
+                        <div>
+                            <label for="month"></label>
+                            <select name="" id="">
+                                <option value="">월</option>
+                                <option value="01">1월</option>
+                                <option value="02">2월</option>
+                                <option value="03">3월</option>
+                                <option value="04">4월</option>
+                                <option value="05">5월</option>
+                                <option value="06">6월</option>
+                                <option value="07">7월</option>
+                                <option value="08">8월</option>
+                                <option value="09">9월</option>
+                                <option value="10">10월</option>
+                                <option value="11">11월</option>
+                                <option value="12">12월</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="day">일</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="sex_area">
+                        <label for="sex">성별</label>
+                        <input type="raidep" id="sex">여
+                        <input type="raidep" id="sex">남
+                    </div>
+                    <div class="tel_area">
+                        <label for="tel">전화번호</label>
+                        <input type="text">
+                        <p>ex "-"없이 숫자만 입력</p>
+                    </div>
+                    <div class="email_area">
+                        <label for="email">이메일</label>
+                        <input type="text" id="email">
+                        <input type="text" id="email_domain">
+                    </div>
+                    <div class="place_area">
+                        <label for="place">주소</label>
+                        <input type="text" id="place">
+                        <button>검색</button>
+                    </div>
+                    <div class="term_area">
+                        <label for="term">약관동의</label>
+                        <input type="checkbox">약관에 동의합니다.
+                    </div>
+                    <button>가입하기</button>
                 </fieldset>
             </form>
         </section>
