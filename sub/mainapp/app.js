@@ -27,7 +27,7 @@ const userForm = document.querySelector(".userName_form"),
     userInput = document.querySelector("#userName"),
     userNameArea = document.querySelector(".userName_on"),
     userNameP = document.querySelector(".userName_cont"),
-    userNameClock = document.querySelector(".userName_clock");
+    userNameCont = document.querySelector(".userName_cont");
 
 // 저장소
 const USER_LS = "currentUser"
@@ -39,10 +39,9 @@ function saveName(text) {
 
 // form 서밋
 function handleSubmit(e) {
+    nameVal = userInput.value,
     e.preventDefault();
-    const nameVal = userInput.value;
     saveName(nameVal);
-    console.log(nameVal)
     showUser();
 }
 
@@ -52,8 +51,8 @@ function showUser() {
     
 
     if (currentUser === null) {
-        userNameP.innerText = `${nameVal} ${nameClock}`;
-        userNameArea.classList.remove("hide");
+        // userNameP.innerText = `${nameVal}`;
+        // userNameArea.classList.remove("hide");
     } else {
         // 저장된 이름이 있으면 출력하기
         userNameArea.classList.remove("hide");
