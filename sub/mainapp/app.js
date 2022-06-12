@@ -40,7 +40,7 @@ function saveName(text) {
 // form 서밋
 function handleSubmit(e) {
     nameVal = userInput.value,
-    e.preventDefault();
+        e.preventDefault();
     saveName(nameVal);
     showUser();
 }
@@ -48,7 +48,7 @@ function handleSubmit(e) {
 // 값출력
 function showUser() {
     const currentUser = localStorage.getItem(USER_LS);
-    
+
 
     if (currentUser === null) {
         // userNameP.innerText = `${nameVal}`;
@@ -70,15 +70,17 @@ showUser();
 
 
 
+
+
 //////////////////// 투두리스트
 const todolistForm = document.querySelector(".todolist_form"),
     todolistInput = document.querySelector("#todolist"),
     todolistBtnAdd = document.querySelector(".btn_add"),
     todolistBtnRemove = document.querySelector(".btn_delete"),
     todolistUL = document.querySelector(".todolist_UL");
-    todolistBtn = document.querySelector("button");
+todolistBtn = document.querySelector("button");
 
-    
+
 
 // 투두리스트 저장 스토리지 설정
 const TODOBOX = "todoList";
@@ -89,67 +91,59 @@ const todoArray = [];
 // 투두리스트 작성
 function todolistWrite(e) {
     e.preventDefault();
-    
     const todolistVal = todolistInput.value;
-
-
-    todoArray.push(todolistVal);
-
-    // 값 스토리지에 저장
-    saveTodoList(todolistVal);
-
-    // 버튼
 
 
     // 입력 검사
     if (todolistVal.length === 0) {
         alert("입력해주십셔");
     } else {
+        // 값 스토리지에 저장
+        saveTodoList(todolistVal);
         // li 만들기
-        paint();
+        paint(todolistVal);
         // input 입력칸 초기화
         todolistInput.value = ``;
     }
 
 }
 
-function paint() {
+function paint(text) {
     const li = document.createElement("li");
     const btn = document.createElement("button");
     const todolistVal = todolistInput.value;
+    // const newid = todoArray.length +1;
 
-    li.innerText = `${todolistVal}`
+
+    // todoarray에 추가
+    const toDoObj = {
+        text: text,
+        // id: newid
+    };
+    todoArray.push(toDoObj)
+
+    // li 텍스트
+    li.innerText = `${text}`
+    // btn 만들기
     btn.innerText = `삭제`;
+    // li,btn 태그 추가하기
     todolistUL.appendChild(li);
     li.appendChild(btn);
 }
 
 // 버튼 클릭시삭제
-function todolistDelete() {
-    const liRemove = btn.parentNode;
-    todolistUL.removeChild(liRemove);
-}
+// function todolistDelete() {
+//     const liRemove = btn.parentNode;
+//     todolistUL.removeChild(liRemove);
+// }
 
 // 스토리지 저장
 function saveTodoList() {
-    localStorage.setItem(TODOBOX,JSON.stringify(todoArray));
+    localStorage.setItem(TODOBOX, JSON.stringify(todoArray));
 }
 
-
-// 스토리지 ..
-// function sayHello() {
-//     const TODOBOX_LIST = localStorage.getItem(TODOBOX);
-//     const TODOBOX_LIST_SHOW = JSON.parse(TODOBOX_LIST);
-//     // const li = document.createElement("li");
-//     // const btn = document.createElement("button");
-//     TODOBOX_LIST_SHOW.forEach(paint)
-
-
-// }
-
-
 //스토리지 값에 따른 나타내기
-function showTODO () {
+function showTODO() {
     const TODOBOX_LIST = localStorage.getItem(TODOBOX);
     const TODOBOX_LIST_SHOW = JSON.parse(TODOBOX_LIST);
 
@@ -157,16 +151,25 @@ function showTODO () {
     if (TODOBOX_LIST === null) {
         alert("할일이 없어요");
     } else {
-        TODOBOX_LIST_SHOW.forEach(function(TODOBOX_LIST) {
-            paint(TODOBOX_LIST)
+        TODOBOX_LIST_SHOW.forEach(function(todoArray) {
+            paint(todoArray.text)
         });
-
-    } 
+    }
 }
 
 // form submit
 todolistForm.addEventListener("submit", todolistWrite);
-todolistBtn.addEventListener("click", todolistDelete);
+// todolistBtn.addEventListener("click", todolistDelete);
 
 // 스토리지 값 보이기
 showTODO();
+
+
+
+
+
+
+
+
+
+//////////////////// 날씨
