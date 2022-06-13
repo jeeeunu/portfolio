@@ -9,15 +9,11 @@ function idCheck(text) {
     const regId = /^[A-Za-z0-9]{8,12}$/;
 
     // 검사진행
-    if(regId.test(text)){
+    if (regId.test(text)){
         console.log("아이디 패스")
         return true;
-    } else if (text.length < 8){
-        alert("아이디는 8글자 이상입니다.");
-        IDinput.focus();
-        return false;
-    } else {
-        alert("아이디 영문+숫자 8글자 이상 입력하세요.");
+    } if (text.length < 8){
+        alert("아이디는 8글자 이상 입력해야합니다.");
         IDinput.focus();
         return false;
     }
