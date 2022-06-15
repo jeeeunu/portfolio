@@ -18,10 +18,6 @@ function init() {
 init();
 
 
-
-
-
-
 //////////////////// userName 나타내기
 const userForm = document.querySelector(".userName_form"),
     userInput = document.querySelector("#userName"),

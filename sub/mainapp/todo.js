@@ -33,17 +33,21 @@ function paintToDo(newTodo) {
     toDoList.appendChild(li);
 }
 
-function handleToDoSubmit(event) {
-    event.preventDefault();
+function handleToDoSubmit(e) {
+    e.preventDefault();
     const newTodo = toDoInput.value;
-    toDoInput.value = "";
-    const newTodoObj = {
-        text: newTodo,
-        id: Date.now()
+    if (newTodo ==='') {
+        alert("할일을 입력해주세요.")
+    } else {
+        toDoInput.value = "";
+        const newTodoObj = {
+            text: newTodo,
+            id: Date.now()
+        }
+        toDos.push(newTodoObj);
+        paintToDo(newTodoObj);
+        saveToDos();
     }
-    toDos.push(newTodoObj);
-    paintToDo(newTodoObj);
-    saveToDos();
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
