@@ -64,9 +64,10 @@ function login(e) {
     const PWinputVal = PWinput.value;
 
     e.preventDefault();
-
-    idCheck(IDinputVal);
-    pwCheck(PWinputVal);
+    if(idCheck(IDinputVal)===true) {
+        pwCheck(PWinputVal);
+    }
+    // pwCheck(PWinputVal);
 
 }
 
